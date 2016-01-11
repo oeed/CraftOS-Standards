@@ -4,7 +4,11 @@
 
 If you're developing a program for ComputerCraft or CraftOS 2.0 it is highly recommended to adopt the systems standardised here. It allows for cross-program compatibility and formats/systems that are well thought out.
 
+----
 
+**Watch this space!** It's probably a good idea to Watch this repository so you are notified when a new standard is proposed.
+
+----
 
 ## How to Contribute
 
