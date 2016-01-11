@@ -10,3 +10,18 @@ The "res" table contains strings, which are urls to download, with the key being
 The "del" table is a table of strings with no names, who contains paths to DELETE.  
   
 The "tag" string is a simple string saying what the new github release/commit of the update contained in the file is.
+
+Here is an example of an update from swiftOS/swiftOS release dev-1 to release dev-2:
+```
+{
+  mod = {
+    [ "swift/updatetool" ] = "https://github.com/swiftOS/swiftOS/raw/54255f5e44cc36cc6a47299b2d257c958d2b1f48/swift/updatetool",
+    [ "README.md" ] = "https://github.com/swiftOS/swiftOS/raw/54255f5e44cc36cc6a47299b2d257c958d2b1f48/README.md",
+    [ "boot.lua" ] = "https://github.com/swiftOS/swiftOS/raw/54255f5e44cc36cc6a47299b2d257c958d2b1f48/boot.lua",
+    startup = "https://github.com/swiftOS/swiftOS/raw/54255f5e44cc36cc6a47299b2d257c958d2b1f48/startup",
+    [ "swift/digitalarmor/rednet" ] = "https://github.com/swiftOS/swiftOS/raw/54255f5e44cc36cc6a47299b2d257c958d2b1f48/swift/digitalarmor/rednet",
+  },
+  tag = "dev-2",
+  del = {},
+}
+```
