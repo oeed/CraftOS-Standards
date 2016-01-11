@@ -27,4 +27,6 @@ Here is an example of an update from swiftOS/swiftOS release dev-2 to commit d2c
   tag = "d2c446a",
   del = {},
 }
-```
+```  
+  
+This format is used for updating programs and OSes. It's main program (updatetool) uses the github api to track differences between the local copy of the OS/program and the online copy of the OS/program. It downloads the files in the 'mod' table, and deletes the files in the 'del' table.
