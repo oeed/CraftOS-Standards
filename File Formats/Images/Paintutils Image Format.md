@@ -2,11 +2,12 @@
 
 ## Quick information
 
------------ | ------------------------
-Type		| Image file format
-MIME		| image/paint
-Extensions 	| .nfp
-Used by 	| paint, paintutils (API)
+| Information |                         |
+| ----------- | ----------------------- |
+| Type        | Image file format       |
+| MIME        | image/paint             |
+| Extensions  | .nfp                    |
+| Used by     | paint, paintutils (API) |
 
 ## Technical details
 
@@ -24,19 +25,21 @@ This is an example of an image file being opened with a text editor. Each value 
 
 ## Color codes
 
-0 | White
-1 | Orange
-2 | Magenta
-3 | Light blue
-4 | Yellow
-5 | Lime
-6 | Pink
-7 | Gray
-8 | Light gray
-9 | Cyan
-a | Purple
-b | Blue
-c | Brown
-d | Green
-e | Red
-f | Black
+| Code | Color      |
+| ---- | ---------- |
+| 0    | White      |
+| 1    | Orange     |
+| 2    | Magenta    |
+| 3    | Light blue |
+| 4    | Yellow     |
+| 5    | Lime       |
+| 6    | Pink       |
+| 7    | Gray       |
+| 8    | Light gray |
+| 9    | Cyan       |
+| a    | Purple     |
+| b    | Blue       |
+| c    | Brown      |
+| d    | Green      |
+| e    | Red        |
+| f    | Black      |
