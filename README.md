@@ -29,3 +29,7 @@ If you think a pull request should already have been merged @ mention one of the
 ## Moderators
 
 - [oeed](https://github.com/oeed)
+- [viluon](https://github.com/viluon)
+- [Lyqyd](https://github.com/Lyqyd)
+- [dan200](https://github.com/dan200)
+
