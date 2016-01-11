@@ -17,7 +17,7 @@ If you have a standard you would like to propose follow these steps:
 5. **Post a link on the forums** – not everyone pays attention to GitHub. To allow more people to see your RFC create a topic in general directing them to the pull request. The post should simply give a very brief description of what your standard is (i.e. *an method redirecting a terminal over Rednet*). The post's title should also make it pretty obvious it's an RFC (i.e. *RFC: TRoR (Terminal Redirection over Rednet)*). To keep everything centralised it's best to keep discussion of the RFC on the pull request, *NOT* the forums post.
 6. **Discussion** – if anyone has any issues or improvements with your standard discuss them on the pull request and change the RFC's markdown file until people have agreed upon the standard. At this point the pull request will be merged, you standard has been accepted!
 
-If think a pull request should already have been merged @ mention one of the moderators (see below).
+If you think a pull request should already have been merged @ mention one of the moderators (see below).
 
 ## Moderators
 
