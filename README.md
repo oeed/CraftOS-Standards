@@ -16,7 +16,7 @@ If you're developing a program for ComputerCraft or CraftOS 2.0 it is highly rec
 
 If you have a standard you would like to propose follow these steps:
 
-1. **Make sure there isn't an existing standard** – the whole point of this repo is to ensure we don't have two [slightly different standards](https://xkcd.com/927/); there should only be one. You can either check the [PR page](https://github.com/oeed/CraftOS-Standards/pulls?q=is%3Apr) or directly browse the [source tree](https://github.com/oeed/CraftOS-Standards/tree/master/) of this repository.
+1. **Make sure there isn't an existing standard** – the whole point of this repo is to ensure we don't have two [slightly different standards](https://xkcd.com/927/); there should only be one. You can either check the [PR page](https://github.com/oeed/CraftOS-Standards/pulls?q=is%3Apr) or directly browse the [source tree](https://github.com/oeed/CraftOS-Standards/tree/master/) of this repository. You should also look at the Submission Checklist (further down this page).
 2. **Develop your standard** – think about the different use cases and try to create clearly defined standards and rules for your standard. If applicable, it's probably a good idea to create an API or example code for your standard.
 3. **Write an RFC** – once you have created your standard create a Markdown document which clearly explains what your standard is, how it works and how to use it. If you're at all unsure of what to do, look at the RFCs of accepted standards. Make sure that the document covers your standard extensively, and contains thorough examples. You want your standard to be the most popular one and to be used by as many people as possible, so this step should take the longest amount of time (not counting #7 Discussion).
 4. (Optional) **Create a GitHub repository for in-depth docs and example source code** – Markdown is great, but sometimes you just need to express your thoughts in Lua. This step should be taken if the standard needs thorough documentation (such as a [wiki](https://help.github.com/articles/about-github-wikis/)) and/or example code that is either too long to be included in the Markdown document or split into too many files and follows a specific directory structure. Add the link to your newly created repository to the Markdown document from step 3.
@@ -26,6 +26,13 @@ If you have a standard you would like to propose follow these steps:
 
 If you think a pull request should already have been merged @ mention one of the moderators (see below).
 
+## Submission Checklist
+
+If you think you're reading to create your pull request ask yourself these questions:
+- [ ] **Does your proposal/format really need to be standardised?** Standards exist to increase cross-platform compatibility and keep reinventing the wheel to a minimum. In many cases, however, the proposal can be overly specific or so simple that standardising it yields little to no benefits.
+- [ ] **If your standard gets accepted, will its users benefit from it?** Does your proposal help solve frequent issues related to the category it should be used in? Does it help with compatibility (esp. backward and forward compatibility with future standard revisions)? Is it easy to use? 
+- [ ] **Is your proposed standard easy to use?** Does it require third-party code or brand new code to be written in order to be used properly, or do you pack needed utilities with the proposal? Are these utilities efficient? 
+- 
 ## Moderators
 
 - [oeed](https://github.com/oeed)
