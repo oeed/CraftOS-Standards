@@ -14,7 +14,7 @@ The "tag" string is a simple string saying what the new github release/commit of
 Here is an example of an update from swiftOS/swiftOS release dev-1 to release dev-2:
 ```
 {
-  mod = {
+  res = {
     [ "swift/updatetool" ] = "https://github.com/swiftOS/swiftOS/raw/54255f5e44cc36cc6a47299b2d257c958d2b1f48/swift/updatetool",
     [ "README.md" ] = "https://github.com/swiftOS/swiftOS/raw/54255f5e44cc36cc6a47299b2d257c958d2b1f48/README.md",
     [ "boot.lua" ] = "https://github.com/swiftOS/swiftOS/raw/54255f5e44cc36cc6a47299b2d257c958d2b1f48/boot.lua",
