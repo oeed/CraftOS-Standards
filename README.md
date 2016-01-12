@@ -32,7 +32,7 @@ If you think you're reading to create your pull request ask yourself these quest
 - [ ] **Does your proposal/format really need to be standardised?** Standards exist to increase cross-platform compatibility and keep reinventing the wheel to a minimum. In many cases, however, the proposal can be overly specific or so simple that standardising it yields little to no benefits.
 - [ ] **If your standard gets accepted, will its users benefit from it?** Does your proposal help solve frequent issues related to the category it should be used in? Does it help with compatibility (esp. backward and forward compatibility with future standard revisions)? Is it easy to use? 
 - [ ] **Is your proposed standard easy to use?** Does it require third-party code or brand new code to be written in order to be used properly, or do you pack needed utilities with the proposal? Are these utilities efficient? 
-- 
+
 ## Moderators
 
 - [oeed](https://github.com/oeed)
