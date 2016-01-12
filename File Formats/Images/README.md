@@ -2,7 +2,7 @@
 
 ## Official Recommendations
 
-Rather than creating your own format or using a lesser used format, it is recommended to use the following formats based on your needs.
+Rather than creating your own format or using a lesser used/inefficient format, it is recommended to use the following formats based on your needs.
 
 **Images that require both text and colour in each pixel (advanced computers)**: [NitroFingers Text](todo)
 
