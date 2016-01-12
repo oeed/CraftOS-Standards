@@ -2,12 +2,11 @@
 
 ## Quick information
 
-| Information |                         |
-| ----------- | ----------------------- |
-| Type        | Image file format       |
-| MIME        | image/paint             |
-| Extensions  | .nfp                    |
-| Used by     | paint, paintutils (API) |
+| Information |                           |
+| ----------- | ------------------------- |
+| Type        | Image file format         |
+| MIME        | `image/paint`             |
+| Extensions  | `.nfp`                    |
 
 ## Technical details
 
@@ -22,6 +21,7 @@ The file contains a row of one character long values as pixel information. Each 
 ```
 
 This is an example of an image file being opened with a text editor. Each value maches one pixel. The values always have to be one of the 16 color codes (0-9, a-f).
+Having a space as a pixel information makes that pixel transparent.
 
 ## Color codes
 
