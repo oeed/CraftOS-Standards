@@ -1,7 +1,5 @@
 **This file is a template of how a standard proposal document should look like.**
 
-> **Note**: This document uses 4 character wide soft tabs.
-
 ---
 
 # _Standard Name_
