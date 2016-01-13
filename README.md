@@ -39,6 +39,9 @@ When in doubt, contact these people either on [gitter](https://gitter.im) or on 
 
 - [oeed](https://github.com/oeed) - [forum profile](http://www.computercraft.info/forums2/index.php?/user/12402-oeed/)
 - [viluon](https://github.com/viluon) - [forum profile](http://www.computercraft.info/forums2/index.php?/user/4290-viluon/)
+ 
+If neither of these contributors is available, you can contact the following people as a last resort. They should not be bothered if anyone from the main list is reachable in a span of 2-3 days.
+
 - [Lyqyd](https://github.com/Lyqyd) - [forum profile](http://www.computercraft.info/forums2/index.php?/user/1736-lyqyd/)
 - [dan200](https://github.com/dan200) - [forum profile](http://www.computercraft.info/forums2/index.php?/user/27-dan200/)
 
