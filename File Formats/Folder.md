@@ -1,4 +1,4 @@
-# *CCS 3:* Directory
+# *COS 3:* Directory
 
 ## Quick information
 

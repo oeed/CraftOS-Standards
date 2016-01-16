@@ -1,4 +1,4 @@
-# *CCS 2:* Lua
+# *COS 2:* Lua
 
 ## Quick information
 
