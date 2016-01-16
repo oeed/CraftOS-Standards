@@ -1,4 +1,4 @@
-# Plain Test
+# *CCS 1:* Plain Test
 
 ## Quick information
 
