@@ -1,4 +1,4 @@
-# Paintutils Image
+# *CCS 4:* Paintutils Image
 
 ## Quick information
 
