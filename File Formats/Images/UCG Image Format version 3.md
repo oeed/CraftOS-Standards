@@ -4,22 +4,22 @@
 1. **Abstract**
 2. **Quick Overview**
 3. **Introduction & Purpose**
-4. **Specification**
-	4.1 Definitions
-	&emsp;4.1.1 ColorValue
-	&emsp;4.1.2 LengthValue
-	&emsp;4.1.3 HuffmanTree
-	&emsp;4.1.4 PixelData
-5. **Explanation**
-	5.1 Signature
-	5.2 version
-	5.3 Flags
-	5.4 Width
-	5.5 Height
-	5.6 ColorHuffmanTree
-	5.7 LengthHuffmanTree
-	5.8 PixelData
-	5.9 Huffman Codes
+4. **Specification** <br>
+	4.1 Definitions <br>
+	&emsp;4.1.1 ColorValue <br>
+	&emsp;4.1.2 LengthValue <br>
+	&emsp;4.1.3 HuffmanTree <br>
+	&emsp;4.1.4 PixelData <br>
+5. **Explanation** <br>
+	5.1 Signature <br>
+	5.2 version <br>
+	5.3 Flags <br>
+	5.4 Width <br>
+	5.5 Height <br>
+	5.6 ColorHuffmanTree <br>
+	5.7 LengthHuffmanTree <br>
+	5.8 PixelData <br>
+	5.9 Huffman Codes <br>
 6. **See Also**
 
 ## 1. Abstract
