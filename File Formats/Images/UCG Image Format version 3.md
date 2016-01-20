@@ -23,7 +23,7 @@
 6. **See Also**
 
 ## 1. Abstract
-This COS (CraftOS Standard) defines and explains a file format for storing images and graphics, specificated for the usage with ComputerCraft and CraftOS 2.
+This document defines and explains a file format for storing images and graphics, specificated for the usage with ComputerCraft and CraftOS 2.
 
 ## 2. Quick Overview
 
@@ -75,6 +75,7 @@ Within a computer, a number may occupy multiple bytes. All multi-byte numbers in
 |        + less significant byte = 8
 + more significant byte = 2 x 256
 ```
+
 Word: 2 byte / 16 bit binary number
 
 #### 4.1.1 ColorValue
@@ -157,9 +158,9 @@ The Decoder is now able to completely reconstruct the Huffman Tree, and is able 
 The Huffman Codes of the above example would look like this:
 
 | Value | Huffman Code |
-| - | -- |
-| A | 00 |
-| B | 1 |
+| - | --- |
+| A | 00  |
+| B | 1   |
 | C | 011 |
 | D | 010 |
 
@@ -187,12 +188,12 @@ The Huffman Codes of this example would look like this:
 
 | Value | Huffman Code |
 | ----- | ------------ |
-| 7 | 00 |
-| 8 | 01 |
-| 9 | 1000 |
-| A | 1001 |
-| B | 101 |
-| 0 | 11 |
+| 7     | 00           |
+| 8     | 01           |
+| 9     | 1000         |
+| A     | 1001         |
+| B     | 101          |
+| 0     | 11           |
 
 An example HuffmanTree decoder written in lua would look like this:
 ```lua
@@ -245,22 +246,30 @@ If you finished encoding the PixelData and the total number of bits of the file 
 ## 5. Explanation
 ### 5.1 Signature
 The signature (hex number 0xFF2137) is included in the file to check if this file is really in UCG format. Every UCG file of every version has this 3 byte signature at the start of the file.
+
 ### 5.2 Version
 The version (0x03 = decimal 3) describes the UCG version used to encode this file. Every UCG file of every version has this 1 byte version record following after the signature.
 For UCGv2 files, a 2 would be there. This specification **only** describes how to decode UCGv3 images. In case you read a file where this version byte equals 2,
 this specification is completely useless.
+
 ### 5.3 Flags
 The Flags byte is currently unused.
+
 ### 5.4 Width
 This 2 byte number describes the width (in pixels) of the image.
+
 ### 5.5 Height
 This 2 byte number describes the height (in pixels) of the image.
+
 ### 5.6 ColorHuffmanTree
 A Huffman Tree (see section 4.1.3) that assigns every color its Huffman Code for usage in the PixelData block. The values of this Huffman Tree are encoded as ColorValues. (see section 4.1.1)
+
 ### 5.7 LengthHuffmanTree
 A Huffman Tree (see section 4.1.3) that assigns every length its Huffman Code for usage in the PixelData block. The length values are a result of the RLE (Run-length encoding) done by the encoder. The values of this Huffman Tree are encoded as LengthValues. (see section 3.1.2)
+
 ### 5.8 PixelData
 This is the block that contains the real content of the image. This makes the biggest part of the file.
+
 ### 5.9 Huffman Codes
 Huffman Codes are individually sized binary codes.
 The technique of Huffman Coding assigns more common used values a shorter Huffman Code and less used values a longer Huffman Code in order to optimize the file size.
@@ -268,6 +277,7 @@ The technique of Huffman Coding assigns more common used values a shorter Huffma
 An easy example: The character "A" gets used 10 times in a file, the character "B" gets used 3 times and the character "C" 1 time. A character is 1 byte large, so you would need 14bytes to store this without any encoding.
 The question is now: Is there a way to store the same information more efficiently? The answer is: Yes, using Huffman Coding. I'm not going to explain here how to get the Huffman Codes of the individual characters, since there is a lot of information in the internet about this topic and this is just a specification of the UCG file format. Huffman Coding would assign the character A the Huffman Code "0", the character B the Huffman Code "10" and the character C the Huffman Code "11".
 The total size of the file (without the Huffman Tree that has to written first, so that the decoder knows the Huffman Codes) using these codes would be 18 bits. Using the Huffman Tree serialization algorithm UCG uses, the Huffman Tree would take 29bits. That makes a total of 47bits, or about 6bytes.
+
 ## 6. See Also
 The official implementation of the UCGv3 file format: https://github.com/ardera/libucg
 The CraftOS Standards Repository: https://github.com/oeed/CraftOS-Standards
