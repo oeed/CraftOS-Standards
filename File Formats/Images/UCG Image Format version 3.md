@@ -6,10 +6,12 @@
 3. **Introduction & Purpose**
 4. **Specification** <br>
 	4.1 Definitions <br>
-	&emsp;4.1.1 ColorValue <br>
-	&emsp;4.1.2 LengthValue <br>
-	&emsp;4.1.3 HuffmanTree <br>
-	&emsp;4.1.4 PixelData <br>
+	&emsp;4.1.1 Byte <br>
+	&emsp;4.1.2 Word <br>
+	&emsp;4.1.3 ColorValue <br>
+	&emsp;4.1.4 LengthValue <br>
+	&emsp;4.1.5 HuffmanTree <br>
+	&emsp;4.1.6 PixelData <br>
 5. **Explanation** <br>
 	5.1 Signature <br>
 	5.2 version <br>
@@ -54,6 +56,7 @@ LengthHuffmanTree = *(HuffmanTree with value type LengthValue)*
 PixelData = *(PixelData)*
 
 ### 4.1 Definitions
+#### 4.1.1 Byte
 Bytes stored within a computer do not have a "bit order", since they are always treated as a unit. However, a byte considered as an integer between 0 and 255 does have a most- and least-significant bit, and since we write numbers with the most-significant digit on the left, we also write bytes with the most-significant bit on the left.
 
 In the diagram below, we number the bits of a byte so that bit 0 is the least-significant bit, i.e., the bits are numbered:
@@ -76,15 +79,16 @@ Within a computer, a number may occupy multiple bytes. All multi-byte numbers in
 + more significant byte = 2 x 256
 ```
 
+#### 4.1.2 Word
 Word: 2 byte / 16 bit binary number
 
-#### 4.1.1 ColorValue
+#### 4.1.3 ColorValue
 A data element with the type "ColorValue" is a 5bit binary number, storing the numbers 0-32.
 If x (the value of this 5bit number) less than 16, you can get the color by just calculating 2^x.
 If x equals 16, the object it is associated with is transparent. (In this case, the pixel/pixel row is transparent)
 Other values are unused and reserved for later usage.
 
-#### 4.1.2 LengthValue
+#### 4.1.4 LengthValue
 A data element with the type "LengthValue" is a dynamically-sized binary number, storing the numbers 0-65535.
 The first part of a LengthValue is a 4bit number.
 If this 4bit number x is less than 13, it equals the value of it. (with value is meant the value that a function reading a LengthValue would return)
@@ -123,7 +127,7 @@ end
 
 If a number follows after the first 4bit number, it describes the value. If not, the 4bit number describes the value.
 
-#### 4.1.3 HuffmanTree
+#### 4.1.5 HuffmanTree
 Huffman Trees are encoded & serialized using a simple algorithm.
 Consider the following Huffman Tree:
 ```
@@ -233,7 +237,7 @@ function readHuffmanTree(inputstream, readValue)
 end
 ```
 
-#### 4.1.4 PixelData
+#### 4.1.6 PixelData
 PixelData is an array that consists purely of LengthElements. Each LengthElement consists of a color Huffman Code, encoded in the color Huffman Tree (see section 4), followed by a length Huffman Code, which is encoded in the length Huffman Tree (see section 4). The value of the color Huffman Code equals the color of the array of pixels that this LengthElement describes, while the value of the length Huffman Code equals the number of pixels that this LengthElement describes.
 
 Let's assume we have the following LengthElement:
