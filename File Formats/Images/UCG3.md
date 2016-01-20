@@ -31,6 +31,7 @@ This document defines and explains a file format for storing images and graphics
 
 | Name       | Value             |
 | ---------- | ----------------- |
+| Version    | 1.0.0             |
 | Type       | Image file format |
 | MIME       | ``image/ucg``     |
 | Extensions | ``.ucg``          |
