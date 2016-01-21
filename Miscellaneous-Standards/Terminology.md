@@ -51,9 +51,9 @@ A word is comprised of two octets (16 bits), ranging from -32,768 to 36,768 when
 #### 2.1.3. Double Words
 _also acceptable: ints_
 
-A double word, double (not to be confused with an IEEE 754 double precision floating point) or int is comprised of two words (32 bits), ranging from -2,147,483,647 to 2,147,483,647 when signed or from 0 to 4,294,967,295 when unsigned.
+A double word, double (not to be confused with an [IEEE 754](https://en.wikipedia.org/wiki/IEEE_floating_point) double precision floating point) or int is comprised of two words (32 bits), ranging from -2,147,483,647 to 2,147,483,647 when signed or from 0 to 4,294,967,295 when unsigned.
 
-**Note**: while technically correct, the use of _double_ to mean _double word_ can entail some ambiguity, as _double_ can also mean an IEEE 754 double precision floating point. See section 2.3 for further details.
+**Note**: while technically correct, the use of _double_ to mean _double word_ can entail some ambiguity, as _double_ can also mean an [IEEE 754](https://en.wikipedia.org/wiki/IEEE_floating_point) double precision floating point. See section 2.3 for further details.
 
 
 #### 2.1.3. Quad Words
@@ -71,7 +71,7 @@ Strings are always encoded in UTF-8 (but are limited to the ASCII range), withou
 
 ### 2.3. Floats
 
-Floating-point numbers (floats, for short) refer IEEE 754  double-precision floating points unless explicitly stated otherwise.
+Floating-point numbers (floats, for short) refer [IEEE 754](https://en.wikipedia.org/wiki/IEEE_floating_point)  double-precision floating points unless explicitly stated otherwise.
 
 
 ### 3. General
