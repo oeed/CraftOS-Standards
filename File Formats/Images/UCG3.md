@@ -1,4 +1,4 @@
-# **Universal Compressed Graphics file format version 3**
+# **Universal Compressed Graphics file format version 1**
 
 ## Contents
 1. **Abstract**
@@ -44,7 +44,7 @@ The purpose of this file format is to store bitmaps as compact as possible, but 
 
 FileHeader = Signature + Version
 Signature = *(3 bytes)* 0xFF2137
-Version = *(1 byte)* 0x03
+Version = *(1 byte)* 0x01
 
 ImageHeader = Flags + Width + Height
 Flags = *(1 byte)*
@@ -253,9 +253,8 @@ If you finished encoding the PixelData and the total number of bits of the file 
 The signature (hex number 0xFF2137) is included in the file to check if this file is really in UCG format. Every UCG file of every version has this 3 byte signature at the start of the file.
 
 ### 5.2 Version
-The version (0x03 = decimal 3) describes the UCG version used to encode this file. Every UCG file of every version has this 1 byte version record following after the signature.
-For UCGv2 files, a 2 would be there. This specification **only** describes how to decode UCGv3 images. In case you read a file where this version byte equals 2,
-this specification is completely useless.
+The version (0x01 = decimal 1) describes the UCG version used to encode this file. Every UCG file of every version has this 1 byte version record following after the signature.
+For UCG123 files, a 123 would be there. This specification **only** describes how to decode UCG1 images. In case you read a file where this version byte equals any number other than 1, this specification is completely useless.
 
 ### 5.3 Flags
 The Flags byte is currently unused.
