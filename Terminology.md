@@ -11,18 +11,18 @@
 
 1. **Abstract**  
 2. **Data storage**  
-	2.1 Integers  
-	&emsp;2.1.1 Octet  
-	&emsp;2.1.2 Word  
-	&emsp;2.1.3 Double Word  
-	&emsp;2.1.4 Quad Word  
-	2.2 Strings  
-	2.3 Floats
+	2.1 **Integers**  
+	&emsp;2.1.1 **Octet**  
+	&emsp;2.1.2 **Word**  
+	&emsp;2.1.3 **Double Word**  
+	&emsp;2.1.4 **Quad Word**  
+	2.2 **Strings**
+	2.3 **Floats**
 3. **General**  
-	3.1 Executable  
-	3.2 Library  
-	3.3 Resource  
-	3.3 API
+	3.1 **Executable**  
+	3.2 **Library**
+	3.3 **Resource**  
+	3.3 **API**
 
 ### 1. Abstract
 
