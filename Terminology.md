@@ -20,7 +20,7 @@
 	2.3 **Floats**
 3. **General**  
 	3.1 **Executable**  
-	3.2 **Library**
+	3.2 **Library**  
 	3.3 **Resource**  
 	3.3 **API**
 
