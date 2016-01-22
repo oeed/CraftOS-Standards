@@ -16,8 +16,8 @@
 	&emsp;2.1.2 **Word**  
 	&emsp;2.1.3 **Double Word**  
 	&emsp;2.1.4 **Quad Word**  
-	2.2 **Strings**
-	2.3 **Floats**
+	2.2 **Strings**  
+	2.3 **Floats**  
 3. **General**  
 	3.1 **Executable**  
 	3.2 **Library**  
