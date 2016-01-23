@@ -68,7 +68,7 @@ In the diagram below, we number the bits of a byte so that bit 0 is the least-si
 ```
 The bits are processed from the left to the right.
 
-Within a computer, a number may occupy multiple bytes. All multi-byte numbers in the format described here are stored with the most-significant byte first (at the lower memory address). For example, the decimal number 520 is stored as:
+Within a computer, a number may occupy multiple bytes. All multi-byte numbers in the format described here are stored with the most-significant byte first (at the lower memory address) = Big-endian. For example, the decimal number 520 is stored as:
 ```
 0        1
 +--------+--------+
@@ -81,7 +81,7 @@ Within a computer, a number may occupy multiple bytes. All multi-byte numbers in
 ```
 
 #### 4.1.2 Word
-Word: 2 byte / 16 bit binary number
+Word: 2 byte / 16 bit unsigned integer number
 
 #### 4.1.3 ColorValue
 A data element with the type "ColorValue" is a 5bit binary number, storing the numbers 0-32.
@@ -266,10 +266,10 @@ This 2 byte number describes the width (in pixels) of the image.
 This 2 byte number describes the height (in pixels) of the image.
 
 ### 5.6 ColorHuffmanTree
-A Huffman Tree (see section 4.1.3) that assigns every color its Huffman Code for usage in the PixelData block. The values of this Huffman Tree are encoded as ColorValues. (see section 4.1.1)
+A Huffman Tree (see section 4.1.5) that assigns every color its Huffman Code for usage in the PixelData block. The values of this Huffman Tree are encoded as ColorValues. (see section 4.1.3)
 
 ### 5.7 LengthHuffmanTree
-A Huffman Tree (see section 4.1.3) that assigns every length its Huffman Code for usage in the PixelData block. The length values are a result of the RLE (Run-length encoding) done by the encoder. The values of this Huffman Tree are encoded as LengthValues. (see section 3.1.2)
+A Huffman Tree (see section 4.1.5) that assigns every length its Huffman Code for usage in the PixelData block. The length values are a result of the RLE (Run-length encoding) done by the encoder. The values of this Huffman Tree are encoded as LengthValues. (see section 4.1.4)
 
 ### 5.8 PixelData
 This is the block that contains the real content of the image. This makes the biggest part of the file.
