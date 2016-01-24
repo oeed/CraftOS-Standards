@@ -14,7 +14,7 @@ The format is similar to the paintutils image format in that colours are defined
 
 Unlike the paintutils format, however, this format allows characters and text colours to be saved, in addition to the background colour.
 
-### Colour start characters
+### Special characters
 
 The format uses two special characters, a character whose byte is `30` and another whose byte is `31`. 
 
@@ -23,17 +23,6 @@ The format uses two special characters, a character whose byte is `30` and anoth
 | ---- | ---------- |
 |  30  | Background colour declaration |
 |  31  | Text colour declaration |
-
-To create one of these characters, use `string.char`.
-```Lua
-local bgCharacter = string.char( 30 )
-```
-
-To compare a single character of a string, use `string.byte`.
-```Lua
-local char = string.sub( line, i, i )
-if string.byte( char ) == 30 then
-```
 
 If a `30` or `31` character is encountered the character immediately after will be a hexadecimal. If the character is `30` the colour represented by the hexadecimal becomes the 'active' background colour. Hence, any proceeding pixels will use the active background colour (until the next `30` character changes it). The same applies with the `31` character, but it instead sets the text colour.
 
