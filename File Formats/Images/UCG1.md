@@ -57,7 +57,7 @@ LengthHuffmanTree = *(HuffmanTree with value type LengthValue)*
 PixelData = *(PixelData)*
 
 ### 4.1 Definitions
-You can find an explanation of the standard terminology used in this document (here.)[https://github.com/oeed/CraftOS-Standards/blob/master/Terminology.md]
+You can find an explanation of the standard terminology used in this document [here.](https://github.com/oeed/CraftOS-Standards/blob/master/Terminology.md)
 #### 4.1.1 Byte
 Bytes stored within a computer do not have a "bit order", since they are always treated as a unit. However, a byte considered as an integer between 0 and 255 does have a most- and least-significant bit, and since we write numbers with the most-significant digit on the left, we also write bytes with the most-significant bit on the left.
 
