@@ -62,7 +62,7 @@ PixelData = *(PixelData)*
 
 ### 4.1 Definitions
 #### 4.1.1 Byte
-Bytes stored within a computer do not have a "bit order", since they are always treated as a unit. However, a byte considered as an integer between 0 and 255 does have a most- and least-significant bit, and since we write numbers with the most-significant digit on the left, we also write bytes with the most-significant bit on the left.
+Bytes (also called "Octets") stored within a computer do not have a "bit order", since they are always treated as a unit. However, a byte considered as an integer between 0 and 255 does have a most- and least-significant bit, and since we write numbers with the most-significant digit on the left, we also write bytes with the most-significant bit on the left.
 
 In the diagram below, we number the bits of a byte so that bit 0 is the least-significant bit, i.e., the bits are numbered:
 ```
@@ -85,7 +85,7 @@ Within a computer, a number may occupy multiple bytes. All multi-byte numbers in
 ```
 
 #### 4.1.2 Word
-Word: 2 byte / 16 bit unsigned integer number
+The type `word` means an unsigned 2-byte integer in this document.  
 
 #### 4.1.3 `ColorValue`
 A data element with the type "`ColorValue`" is a 5bit binary integer, storing the values from 0 to 32. If x (the value of this 5bit number) is less than 16, the real integer value of the `ColorValue` is simply `2^x`. If x _equals_ 16, the object it is associated with is transparent. (In this case, the pixel/pixel row is transparent). All other possible values are unused and reserved for later usage.
@@ -236,12 +236,12 @@ end
 ```
 
 #### 4.1.6 PixelData
-PixelData is an array that consists purely of `LengthValue`s. Each `LengthValue` consists of a color Huffman Code, encoded in the color Huffman Tree (see section 4), followed by a length Huffman Code, which is encoded in the length Huffman Tree (see section 4). The value of the color Huffman Code equals the color of the array of pixels that this `LengthValue` describes, while the value of the length Huffman Code equals the number of pixels that this `LengthValue` describes.
+PixelData is an array that consists purely of so-called `LengthElement`s, the results of Run-length encoding. Each `LengthElement` consists of a color Huffman Code, encoded in the color Huffman Tree (see section 4), followed by a length Huffman Code, which is encoded in the length Huffman Tree (see section 4). The value of the color Huffman Code equals the color of the array of pixels that this `LengthElement` describes, while the value of the length Huffman Code equals the number of pixels that this `LengthElement` describes.
 
-Let's assume we have the following `LengthValue`:
+Let's assume we have the following `LengthElement`:
 {4, 31}
-This means that 31 pixels with the color "4" follow after the current position. To know if you should switch to the next line, you add the lengths of every `LengthValue` in the current line together and check if it equals the Width of the image. If it does, the following `LengthValue`s describe the next line of the image.
-In cases where the root element of a Huffman Tree is a leaf, there is no entry of this type. For example, if the root element of the color Huffman Tree is a leaf, no `LengthValue` in the PixelData has a color attribute and only consists of a length attribute. (in this case, the length attribute would equal the width of the image every time, and the LengthTree would only consist of one element, which means that you don't need to write any `LengthValue` at all, and there is no content in the PixelData block at all.)
+This means that 31 pixels with the color "4" follow after the current position. To know if you should switch to the next line, you add the lengths of every `LengthElement` in the current line together and check if it equals the Width of the image. If it does, the following `LengthElement`s describe the next line of the image.
+In cases where the root element of a Huffman Tree is a leaf, there is no entry of this type. For example, if the root element of the color Huffman Tree is a leaf, no `LengthElement` in the PixelData has a color attribute and only consists of a length attribute. (in this case, the length attribute would equal the width of the image every time, and the LengthTree would only consist of one element, which means that you don't need to write any `LengthElement` at all, and there is no content in the PixelData block at all.)
 
 If you finished encoding the PixelData and the total number of bits of the file is not divisible by 8, a series of zeroes or ones follows to fill up the last byte.
 
