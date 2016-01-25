@@ -57,6 +57,7 @@ LengthHuffmanTree = *(HuffmanTree with value type LengthValue)*
 PixelData = *(PixelData)*
 
 ### 4.1 Definitions
+You can find an explanation of the standard terminology used in this document (here.)[https://github.com/oeed/CraftOS-Standards/blob/master/Terminology.md]
 #### 4.1.1 Byte
 Bytes stored within a computer do not have a "bit order", since they are always treated as a unit. However, a byte considered as an integer between 0 and 255 does have a most- and least-significant bit, and since we write numbers with the most-significant digit on the left, we also write bytes with the most-significant bit on the left.
 
@@ -80,16 +81,13 @@ Within a computer, a number may occupy multiple bytes. All multi-byte numbers in
 + more significant byte = 2 x 256
 ```
 
-#### 4.1.2 Word
-Word: 2 byte / 16 bit unsigned integer number
-
-#### 4.1.3 ColorValue
+#### 4.1.2 ColorValue
 A data element with the type "ColorValue" is a 5bit binary number, storing the numbers 0-32.
 If x (the value of this 5bit number) less than 16, you can get the color by just calculating 2^x.
 If x equals 16, the object it is associated with is transparent. (In this case, the pixel/pixel row is transparent)
 Other values are unused and reserved for later usage.
 
-#### 4.1.4 LengthValue
+#### 4.1.3 LengthValue
 A data element with the type "LengthValue" is a dynamically-sized binary number, storing the numbers 0-65535.
 The first part of a LengthValue is a 4bit number.
 If this 4bit number x is less than 13, it equals the value of it. (with value is meant the value that a function reading a LengthValue would return)
@@ -128,7 +126,7 @@ end
 
 If a number follows after the first 4bit number, it describes the value. If not, the 4bit number describes the value.
 
-#### 4.1.5 HuffmanTree
+#### 4.1.4 HuffmanTree
 Huffman Trees are encoded & serialized using a simple algorithm.
 Consider the following Huffman Tree:
 ```
@@ -238,7 +236,7 @@ function readHuffmanTree(inputstream, readValue)
 end
 ```
 
-#### 4.1.6 PixelData
+#### 4.1.5 PixelData
 PixelData is an array that consists purely of LengthElements. Each LengthElement consists of a color Huffman Code, encoded in the color Huffman Tree (see section 4), followed by a length Huffman Code, which is encoded in the length Huffman Tree (see section 4). The value of the color Huffman Code equals the color of the array of pixels that this LengthElement describes, while the value of the length Huffman Code equals the number of pixels that this LengthElement describes.
 
 Let's assume we have the following LengthElement:
@@ -266,10 +264,10 @@ This 2 byte number describes the width (in pixels) of the image.
 This 2 byte number describes the height (in pixels) of the image.
 
 ### 5.6 ColorHuffmanTree
-A Huffman Tree (see section 4.1.5) that assigns every color its Huffman Code for usage in the PixelData block. The values of this Huffman Tree are encoded as ColorValues. (see section 4.1.3)
+A Huffman Tree (see section 4.1.4) that assigns every color its Huffman Code for usage in the PixelData block. The values of this Huffman Tree are encoded as ColorValues. (see section 4.1.2)
 
 ### 5.7 LengthHuffmanTree
-A Huffman Tree (see section 4.1.5) that assigns every length its Huffman Code for usage in the PixelData block. The length values are a result of the RLE (Run-length encoding) done by the encoder. The values of this Huffman Tree are encoded as LengthValues. (see section 4.1.4)
+A Huffman Tree (see section 4.1.4) that assigns every length its Huffman Code for usage in the PixelData block. The length values are a result of the RLE (Run-length encoding) done by the encoder. The values of this Huffman Tree are encoded as LengthValues. (see section 4.1.3)
 
 ### 5.8 PixelData
 This is the block that contains the real content of the image. This makes the biggest part of the file.
