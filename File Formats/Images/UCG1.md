@@ -64,25 +64,14 @@ PixelData = *(PixelData)*
 #### 4.1.1 Byte
 Bytes (also called "Octets") stored within a computer do not have a "bit order", since they are always treated as a unit. However, a byte considered as an integer between 0 and 255 does have a most- and least-significant bit, and since we write numbers with the most-significant digit on the left, we also write bytes with the most-significant bit on the left.
 
-In the diagram below, we number the bits of a byte so that bit 0 is the least-significant bit, i.e., the bits are numbered:
+In the diagram below, we number the bits of a byte so that bit 0 is the least-significant bit, i.e., (= [MSB 0](https://en.wikipedia.org/wiki/Bit_numbering)) and the left-most bit is the one being processed first. the bits are numbered:
 ```
 +--------+
 |76543210|
 +--------+
 ```
-The bits are processed from the left to the right.
 
-Within a computer, a number may occupy multiple bytes. All multi-byte numbers in the format described here are stored with the most-significant byte first (at the lower memory address) = Big-endian. For example, the decimal number 520 is stored as:
-```
-0        1
-+--------+--------+
-|00000010|00001000|
-+--------+--------+
-^        ^
-|        |
-|        + less significant byte = 8
-+ more significant byte = 2 x 256
-```
+Within a computer, a number may occupy multiple bytes. All multi-byte numbers in the format described here are stored in Big-endian. 
 
 #### 4.1.2 Word
 The type `word` means an unsigned 2-byte integer in this document.  
