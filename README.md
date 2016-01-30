@@ -1,5 +1,7 @@
 # CraftOS Standards
 
+[![Join the chat at https://gitter.im/oeed/CraftOS-Standards](https://badges.gitter.im/oeed/CraftOS-Standards.svg)](https://gitter.im/oeed/CraftOS-Standards?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 *Community standard file formats, communication systems, etc. for ComputerCraft and CraftOS 2.0*
 
 If you're developing a program for ComputerCraft or CraftOS 2.0 it is highly recommended to adopt the systems standardised here. It allows for cross-program compatibility and formats/systems that are well thought out.
