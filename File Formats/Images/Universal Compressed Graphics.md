@@ -1,4 +1,4 @@
-# **Universal Compressed Graphics file format version 1**
+# *COS 5:* Universal Compressed Graphics
 
 ## Contents
 1. **Abstract**
@@ -32,7 +32,7 @@ This document defines and details the algorithms behind Universal Compressed Gra
 | Name       | Value             |
 | ---------- | ----------------- |
 | Version    | 1.0.0             |
-| Type       | Image file format |
+| Type       | UCG Image         |
 | MIME       | ``image/ucg``     |
 | Extensions | ``.ucg``          |
 
