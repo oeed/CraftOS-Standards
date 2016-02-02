@@ -51,6 +51,13 @@ To allow for quick, efficient and reliable MIME detection, each extension can on
 ### Unknown MIME
 
 If the MIME cannot be detected `nil` must be used as value. When loading the metadata of a file where the MIME is `nil` you must always try to redetect its MIME.
+
+## New file handling
+
+If a new file is created or a file without metadata or a MIME (i.e. non-nil) then default metadata must be generated.
+
+All of the required values (see **Keys**) *must* be set and optional values may be set if desired. All `Timestamp` values must use the default value of `1451606400` (00:00 1/1/2016 UTC). The MIME of the file must be detected based upon the extension, or, if a file is being created, set by the creating program.
+
 ## Metadata file contents
 
 The information in the *.metadata* file is the metadata for the folder itself and the files within the folder.
