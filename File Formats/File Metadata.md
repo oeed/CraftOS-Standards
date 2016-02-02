@@ -48,6 +48,9 @@ To allow for quick, efficient and reliable MIME detection, each extension can on
 
 *All* of the accepted standardised file formats must have their MIME and extensions detectable by each metadata system.
 
+### Unknown MIME
+
+If the MIME cannot be detected `nil` must be used as value. When loading the metadata of a file where the MIME is `nil` you must always try to redetect its MIME.
 ## Metadata file contents
 
 The information in the *.metadata* file is the metadata for the folder itself and the files within the folder.
