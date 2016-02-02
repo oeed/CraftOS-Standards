@@ -42,6 +42,12 @@ Essentially, the user should never be able to change or see a *.metadata* file.
 
 *.metadata* files must **always** be hidden, this includes a "show hidden files" option; the user must never see them. It must also be **impossible** for the user to open, edit, remove, move, rename, delete or otherwise mutate the file. It must also be **impossible** for the user to create a folder or file called '.metadata'. `fs.isReadOnly` must return `true`, `fs.open` must return `nil` and `fs.exists` must return `false` for a *.metadata* file and must not appear when using `fs.list`.
 
+## MIME detection
+
+To allow for quick, efficient and reliable MIME detection, each extension can only have ***one*** MIME associated with it. However, one MIME can be associated with multiple extensions. This allows for smooth transitions between metadata supporting systems and non-metadata supporting systems. For example, a format with the MIME `image/jpeg` could use `.jpg`, `.jpeg`, etc. However, `.jpg` can ***only*** be associated with with `image/jpeg`.
+
+*All* of the accepted standardised file formats must have their MIME and extensions detectable by each metadata system.
+
 ## Metadata file contents
 
 The information in the *.metadata* file is the metadata for the folder itself and the files within the folder.
@@ -54,13 +60,13 @@ The file is a binary file with data in sections. There is one section for each f
 
 *All integers are big endian.*
 
-**`String`**: A string begins with an unsigned 8-bit integer indicating the length *n* (number of bytes). The following *n* bytes must be the characters of the string.
+**`String`**: A string begins with an unsigned 8-bit integer indicating the length *n* (number of booksytes). The following *n* bytes must be the characters of the string. A `nil` value is stored as a string of zero length.
 
 **`Timestamp`**: A timestamp is stored as signed 32-bit integer with a Unix timestamp. Timestamps must use UTC time, not the local timezone. If the timestamp is unknown, `1451606400` should be used as a default value (00:00 1/1/2016).
 
 **`Int8`**: An unsigned 8-bit integer.
 
-**`Icon`**: An icon begins with an unsigned 16-bit integer indicating the length *n* (number of bytes). The following *n* bytes are the contents of an icon in **NEEDED** format. Do not abuse this value and avoid relying on it too heavily.
+**`Icon`**: An icon begins with an unsigned 16-bit integer indicating the length *n* (number of bytes). The following *n* bytes are the contents of an icon in ** format. Do not abuse this value and avoid relying on it too heavily.
 
 **`Key`**: A key (as in key-value) in a single byte, it should be a single ASCII character.
 
