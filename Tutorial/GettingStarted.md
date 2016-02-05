@@ -6,7 +6,8 @@ If you're reading this, you would probably like to propose a new standard to be 
 You can't spell "your proposal" without "you". You are the person who will be in charge of creating and maintaining the proposal, at least to the point where it gets rejected or accepted. For that, you should have an idea of what do you want to be standardized, how, and why. If you haven't decided on these points yet, chances are that you aren't ready to propose anything, this step cannot be skipped.
 
 ### Step 2: Things to Consider
-Before moving on, you should ask yourself the following questions, to evade pointless hours of work.
+Before moving on, you should ask yourself the following questions, to evade pointless hours of work :stuck_out_tongue:
+> Note that, when unsure, you are always free to join our [gitter chat](https://gitter.im/oeed/CraftOS-Standards) where you can ask for both help and reviews of your proposal, at *any* point! If you find out no one is online (which, while rarely, happens), you can still send a PM (private message) to one of the collaborators, who are listed at the very bottom of the [README](../README.md).
 
 * **Has this standard been suggested earlier?** (Check the [PR page](https://github.com/oeed/CraftOS-Standards/pulls?q=is%3Apr), it has search!)
 * **Is there a superior (recommended) standard already in place?** (Note that while your idea might be revolutionary, chances are that the recommended standard is better. Read its documentation well and decide yourself if you really want to suggest your proposal instead)
@@ -37,7 +38,7 @@ Your documenation isn't complete until it contains example code for integrating 
 One thing to note about example code is that it should be easily readable. Every important line should be commented (i.e. explain what you're doing!) and the code should be well formatted. Preferably, use camel case for all variables. If your code outputs something to the screen, add a comment with the exact same text. In Markdown, use proper highlighting for the source code (i.e. \`\`\`Lua ... \`\`\`).
 
 ### Step 5: Utilities
-While highly recommended, this step is in fact optional. Simple standards, standards that don't involve code and standards for which source code wouldn't be reusable for different platforms (such as different operating systems or frameworks) don't have to keep a repository for such small amounts of source code (less than 100 lines indented), and should instead only stick with code examples as pointed out in step 4. More complex standards should definitely provide libraries and APIs for easy adoption.
+> **Note**: While highly recommended, this step is in fact optional. Simple standards, standards that don't involve code and standards for which source code wouldn't be reusable for different platforms (such as different operating systems or frameworks) don't have to keep a repository for such small amounts of source code (less than 100 lines indented), and should instead only stick with code examples as pointed out in step 4. More complex standards should definitely provide libraries and APIs for easy adoption.
 
 Adding a few examples to the Markdown document is one thing, but publishing a library for easy manipulation and (more importantly) adoption of your brand new standard will certainly increase your user base by a ton. Developers love copy pasta! Since the CraftOS-Standards repository only contains standard docs, you should [set up your own repo](https://guides.github.com/introduction/getting-your-project-on-github/) as a place for real code (also check out the [Hello World tutorial](https://guides.github.com/activities/hello-world/) if you aren't familiar with how GitHub works yet). 
 
