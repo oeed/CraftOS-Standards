@@ -7,7 +7,7 @@ You can't spell "your proposal" without "you". You are the person who will be in
 
 ### Step 2: Things to Consider
 Before moving on, you should ask yourself the following questions, to evade pointless hours of work :stuck_out_tongue:
-> Note that, when unsure, you are always free to join our [gitter chat](https://gitter.im/oeed/CraftOS-Standards) where you can ask for both help and reviews of your proposal, at *any* point! If you find out no one is online (which, while rarely, happens), you can still send a PM (private message) to one of the collaborators, who are listed at the very bottom of the [README](../README.md).
+> Note that, when unsure, you are always free to join our [gitter chat](https://gitter.im/oeed/CraftOS-Standards) where you can ask for both help and reviews of your proposal, at *any* point! If you find out that no one is online just send your message and check back later. If you’re a bit worried or have any concerns you can send a PM (private message) to one of the collaborators, who are listed at the very bottom of the [README](../README.md).
 
 * **Has this standard been suggested earlier?** (Check the [PR page](https://github.com/oeed/CraftOS-Standards/pulls?q=is%3Apr), it has search!)
 * **Is there a superior (recommended) standard already in place?** (Note that while your idea might be revolutionary, chances are that the recommended standard is better. Read its documentation well and decide yourself if you really want to suggest your proposal instead)
