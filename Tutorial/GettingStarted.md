@@ -31,5 +31,19 @@ While writing the documentation, you want to explain the format to people who wi
 * **Use English**
 	* Remember, language is the means of getting a thought from one brain to another without surgery. Don't *make it* a surgery. If you aren't a native speaker, ask for help and grammar checks (asking Google Translator doesn't count). Don't try to post docs in German then look for somebody willing to translate them. Also, use formal language. Technical jargon is accepted (after all, we are programmers).
 
-### Step 4: Almost There
+### Step 4: Code Examples Done Right
+Your documenation isn't complete until it contains example code for integrating your standard in other projects. Examples shouldn't be too extensive (50 lines at most). If your standard is simple enough, you might want to stick to the code examples instead of writing an [API](https://en.wikipedia.org/wiki/Application_programming_interface) later on. If that is the case, all code required to deal with your standard has be included in the documentation. Otherwise, write up code examples only for dealing with *the library* you will create in step 5. Keep them to the point, one per every scenario your standard should be used in. More thorough code should be kept elsewhere (you will be told where in just a moment!).
+
+One thing to note about example code is that it should be easily readable. Every important line should be commented (i.e. explain what you're doing!) and the code should be well formatted. Preferably, use camel case for all variables. If your code outputs something to the screen, add a comment with the exact same text. In Markdown, use proper highlighting for the source code (i.e. \`\`\`Lua ... \`\`\`).
+
+### Step 5: Utilities
+While highly recommended, this step is in fact optional. Simple standards, standards that don't involve code and standards for which source code wouldn't be reusable for different platforms (such as different operating systems or frameworks) don't have to keep a repository for such small amounts of source code (less than 100 lines indented), and should instead only stick with code examples as pointed out in step 4. More complex standards should definitely provide libraries and APIs for easy adoption.
+
+Adding a few examples to the Markdown document is one thing, but publishing a library for easy manipulation and (more importantly) adoption of your brand new standard will certainly increase your user base by a ton. Developers love copy pasta! Since the CraftOS-Standards repository only contains standard docs, you should [set up your own repo](https://guides.github.com/introduction/getting-your-project-on-github/) as a place for real code (also check out the [Hello World tutorial](https://guides.github.com/activities/hello-world/) if you aren't familiar with how GitHub works yet). 
+
+Once you've got the repository up and running, you can start to add commits with both code and documentation. Yes, docs are especially necessary here, since utilities for your standard are technically a different project, and should be self-contained. Make sure that all API functions are documented. It helps to use a [GitHub wiki](https://guides.github.com/features/wikis/) which uses [Markdown](https://guides.github.com/features/mastering-markdown/), the same markup language as your main standard documentation file.
+
+This is a fairly complex step, and involves some tedious work, as your new library for your standard should support it perfectly. However, if your proposal appears interesting to other developers, somebody might be willing to help you out here. Always discuss your ideas and what you are working on at the moment with the growing community at [our gitter chat](https://gitter.im/oeed/CraftOS-Standards).
+
+### Step 6: Almost There
 Haha, we lied! You are nowhere near the finish.
