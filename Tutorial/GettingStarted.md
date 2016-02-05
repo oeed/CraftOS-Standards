@@ -47,7 +47,7 @@ Once you've got the repository up and running, you can start to add commits with
 This is a fairly complex step, and involves some tedious work, as your new library for your standard should support it perfectly. However, if your proposal appears interesting to other developers, somebody might be willing to help you out here. Always discuss your ideas and what you are working on at the moment with the growing community at [our gitter chat](https://gitter.im/oeed/CraftOS-Standards).
 
 #### A Note on Licensing
-All standards published here on CraftOS-Standards are licensed under the [GNU Free Documentation License](../LICENSE.md). **This involves all code examples**. For the sake of open source software and simplicity alike, your libraries should also be licensed under [similar FOSS licenses](http://choosealicense.com/). After all, licensing official utilities for an open source standard under a closed source license wouldn't make much sense.
+All standards published here on CraftOS-Standards are licensed under the [GNU Free Documentation License](../LICENSE.md). **This includes all code examples**. For the sake of open source software and simplicity alike, your libraries should also be licensed under [similar FOSS licenses](http://choosealicense.com/). After all, licensing official utilities for an open source standard under a closed source license wouldn't make much sense.
 
 ### Step 6: Almost There
 Haha, we lied! You are nowhere near the finish.
