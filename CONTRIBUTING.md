@@ -4,7 +4,7 @@
 Welcome, fellow developer! First off, make yourself familiar with the [tutorial](./Tutorial/GettingStarted.md). It's a long read, so enjoy it with some :coffee:. If you'd like to create new standards, the tutorial should actually give you all that you'll need to know. Thanks for helping us out by standardizing something awesome!
 
 ### A Note on Licensing
-All standards published here on CraftOS-Standards are licensed under the [GNU Free Documentation License](../LICENSE.md). **This involves all code examples**. For the sake of open source software and simplicity alike, your libraries should also be licensed under [similar FOSS licenses](http://choosealicense.com/). After all, licensing official utilities for an open source standard under a closed source license wouldn't make much sense.
+All standards published here on CraftOS-Standards are licensed under the [GNU Free Documentation License](../LICENSE.md). **This includes all code examples**. For the sake of open source software and simplicity alike, libraries for dealing with your standard should also be licensed under [similar FOSS licenses](http://choosealicense.com/). After all, licensing official utilities for an open source standard under a closed source license wouldn't make much sense.
 
 ## Getting Started: Becoming a CraftOS-Standards Contributor
 
