@@ -1,6 +1,13 @@
 # Rednet #
 
-Rednet is a network protocol for use with modems.
+Basic Information       | .
+----------------------- | ----------------------------------------------------------
+Builds on top of        | Modem (Peripheral)
+Full Protocol Name      | Rednet
+Shortened Protocol Name | RN
+Protocol ID             | rednet
+
+Rednet is a standard protocol included in computercraft.
 
 ## Rednet Packet ##
 
