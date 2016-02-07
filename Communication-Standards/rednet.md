@@ -7,14 +7,23 @@ Rednet is a network protocol for use with modems.
 A Rednet Packet consists of the following Informations:
 
 type    | name           | description
-------- | -------------- | ---------------------
-number  | nRecipient     | reciever computer ID
+------- | -------------- | ----------------------
+number  | nRecipient     | the target computer ID
 number  | nAnswerChannel | sender computer ID
-string  | tMessage       | table mentioned below
+table   | tMessage       | table mentioned below
+
+tMessage table:
+
+type     | name       | describtion
+-------- | ---------- | ------------------------------------
+number   | nMessageID | a random number from 1 to 2147483647
+number   | nRecipient | the target computer ID
+any data | message    | the message to be transmitted
+string   | sProtocol  | an identifier for a protocol
 
 ## Transmission ##
 
-### If sender computer ID equals reciever computer ID ###
+### If nRecipient equals nAnswerChannel ###
 
 The packet stays on the same computer and gets handled as an incoming packet.
 
@@ -26,13 +35,13 @@ Two modem packages get sent:
 
 field        | value
 ------------ | --------------------
-channel      | reciever computer ID
-replyChannel | sender computer ID
-message      | content
+channel      | nRecipient
+replyChannel | nReplyChannel
+message      | tMessage
 
 
 field        | value
 ------------ | --------------------
 channel      | 65533
-replyChannel | sender computer ID
-message      | content
+replyChannel | nReplyChannel
+message      | tMessage
