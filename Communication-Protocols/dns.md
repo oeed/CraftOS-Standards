@@ -1,10 +1,10 @@
 # Domain Name System #
 
 Information | DNS
------------ | ------------------
-based on    | Rednet (Protocol)
-full name   | Domain Name System
-short name  | DNS
+----------- | ---
+based on | [Rednet (Protocol)](rednet.md)
+full name | Domain Name System
+short name | DNS
 protocol ID | dns
 
 DNS is a Computercraft built-in protocol to handle Host Names. It uses P2P technology to search for computer wich 
