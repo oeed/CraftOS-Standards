@@ -20,6 +20,8 @@ The packet stays on the same computer and gets handled as an incoming packet.
 
 ### If sender computer ID doesn´t equal reciever computer ID ###
 
+#### Sending ####
+
 Two modem packages get sent:
 
 field        | value
@@ -31,6 +33,6 @@ message      | content
 
 field        | value
 ------------ | --------------------
-channel      | repeat channel
+channel      | 65533
 replyChannel | sender computer ID
 message      | content
