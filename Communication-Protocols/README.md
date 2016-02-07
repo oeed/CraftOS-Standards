@@ -2,9 +2,9 @@
 
 ## Protocols ##
 
-ID | Name | Purpose
-- | - | -
-dns | DNS | geting computer IDs corresponding to readable names
+ID     | Name   | Purpose
+------ | ------ | ---------------------------------------------------
+dns    | DNS    | geting computer IDs corresponding to readable names
 rednet | Rednet | routing
 
 ## Contributing ##
