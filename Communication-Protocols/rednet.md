@@ -1,11 +1,11 @@
 # Rednet #
 
-Information | Rednet
------------ | ------------------
-based on    | Modem (Peripheral)
-full name   | Rednet
-short name  | RN
-protocol ID | rednet
+Protocol            | Rednet
+------------------- | ------------------
+transmission method | Modem (Peripheral)
+full name           | Rednet
+short name          | RN
+protocol ID         | rednet
 
 Rednet is a standard protocol included in computercraft.
 
