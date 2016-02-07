@@ -25,7 +25,7 @@ string   | sProtocol  | an identifier for a protocol
 
 ### If nRecipient equals nAnswerChannel ###
 
-The packet stays on the same computer and gets handled as an incoming packet.
+The packet stays on the same computer and gets handled as an ingoing packet.
 
 ### If sender computer ID doesn´t equal reciever computer ID ###
 
@@ -45,3 +45,11 @@ field        | value
 channel      | 65533
 replyChannel | nReplyChannel
 message      | tMessage
+
+#### Repeating ####
+
+A repeater listens to channel 65533 and waits for incoming rednet packets. Everytime it recieves one it looks if it already had transmitted a packet with this nMessageID, if it hasn´t it sends two packets using the same pattern as for a sending task.
+
+#### Recieving ####
+
+A recieving computer listens to the channel whichs number is equal to its Computer ID. When it recieves one, it checks if it recieved a message with the same nMessageID, if it hasn´t it handles the packet as an ingoing packet.
