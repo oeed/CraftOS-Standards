@@ -6,11 +6,11 @@ Rednet is a network protocol for use with modems.
 
 A Rednet Packet consists of the following Informations:
 
-type    |   description
-------- | --------------------
-number  | reciever computer ID
-number  | sender computer ID
-string  | content
+type    | name           | description
+------- | -------------- | ---------------------
+number  | nRecipient     | reciever computer ID
+number  | nAnswerChannel | sender computer ID
+string  | tMessage       | table mentioned below
 
 ## Transmission ##
 
