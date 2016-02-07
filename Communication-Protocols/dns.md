@@ -2,7 +2,7 @@
 
 Information | DNS
 ----------- | ---
-based on | [Rednet (Protocol)](rednet.md)
+transmission method | [Rednet (Protocol)](rednet.md)
 full name | Domain Name System
 short name | DNS
 protocol ID | dns
