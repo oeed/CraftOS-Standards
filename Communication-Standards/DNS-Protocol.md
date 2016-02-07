@@ -2,7 +2,7 @@
 
 Information | DNS
 ----------- | ------------------
-is based on | Rednet (Protocol)
+based on    | Rednet (Protocol)
 full name   | Domain Name System
 short name  | DNS
 protocol ID | dns
