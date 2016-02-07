@@ -1,6 +1,6 @@
 # Full Protocol Name #
 
-Basic Information       |
+Basic Information       | .
 ----------------------- | ----------------------------------------------------------
 Builds on top of        | a protocol or something similar it builds on top
 Full Protocol Name      | the full protocol name (p.e. Hyper Text Transfer Protocol)
