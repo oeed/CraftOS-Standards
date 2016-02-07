@@ -1,7 +1,7 @@
 # Full Protocol Name #
 
 Basic Information       |
------------------------ |
+----------------------- | ----------------------------------------------------------
 Builds on top of        | a protocol or something similar it builds on top
 Full Protocol Name      | the full protocol name (p.e. Hyper Text Transfer Protocol)
 Shortened Protocol Name | the short name (p.e. HTTP)
