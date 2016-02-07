@@ -1,15 +1,15 @@
 # Full Protocol Name #
 
-Basic Information       | .
------------------------ | ----------------------------------------------------------
-Builds on top of        | a protocol or something similar it builds on top
-Full Protocol Name      | the full protocol name (p.e. Hyper Text Transfer Protocol)
-Shortened Protocol Name | the short name (p.e. HTTP)
-Protocol ID             | the ID (p.e. http)
+Information | commonly used name (e.g. HTTP)
+----------- | ----------------------------------------------------------
+based on    | a protocol or something similar it is based on
+full name   | the full protocol name (e.g. Hyper Text Transfer Protocol)
+short name  | the short name (e.g. HTTP)
+protocol ID | the ID (e.g. http)
 
 Some basic Information about the protocol and all Packets listed
 
-## p.e. FOO Package ##
+## Example: FOO Package ##
 
 In a packet definition all Fields of a packet have to be list, if the packet includes a specific table, the table also has to be defined.
 
