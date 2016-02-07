@@ -9,4 +9,4 @@ ID     | Name   | Purpose
 
 ## Contributing ##
 
-If you want to contribute a protocol, first look if there is already a protocol for the same purpose, if there isn´t, create a markdown file of the same format as described in [TEMPLATE.md](TEMPLATE.mt)
+If you want to contribute a protocol, first look if there is already a protocol for the same purpose, if there isn´t, create a markdown file of the same format as described in [TEMPLATE.md](TEMPLATE.md)
