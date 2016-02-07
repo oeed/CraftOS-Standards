@@ -14,4 +14,23 @@ string  | content
 
 ## Transmission ##
 
-The Rednet Message gets transmitted by using the reciever computer ID as channel and the sender computer ID as reply channel. The content gets sent as the message
+### If sender computer ID equals reciever computer ID ###
+
+The packet stays on the same computer and gets handled as an incoming packet.
+
+### If sender computer ID doesn´t equal reciever computer ID ###
+
+Two modem packages get sent:
+
+field        | value
+------------ | --------------------
+channel      | reciever computer ID
+replyChannel | sender computer ID
+message      | content
+
+
+field        | value
+------------ | --------------------
+channel      | repeat channel
+replyChannel | sender computer ID
+message      | content
