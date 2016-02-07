@@ -1,6 +1,6 @@
 # Rednet #
 
-Basic Information       | .
+Information             | Rednet
 ----------------------- | ----------------------------------------------------------
 Builds on top of        | Modem (Peripheral)
 Full Protocol Name      | Rednet
