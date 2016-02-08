@@ -65,4 +65,4 @@ A recieving computer listens to the channel whichs number is equal to its Comput
 
 ## Implementations ##
 
-* [Rednet API](http://www.computercraft.info/wiki/Rednet_(API)) (included in CraftOS) (API)
+* [Rednet API](http://www.computercraft.info/wiki/Rednet_(API)) (included in CraftOS)
