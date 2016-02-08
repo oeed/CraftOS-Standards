@@ -35,8 +35,11 @@ MIMEs should follow the standards given by the [IANA](http://www.iana.org/assign
 
 It is acceptable to create your category (bit before the slash). For example, Silica has over 9 different file formats, all of which start with `silica/`.
 
-[Template](TEMPLATE.md)
-
 ### Code to Read and Write
 
 You must create either an API, or if, the code is not very long, example code, to read and write your file format so others do not have to. However, your description of the format should be thorough enough for someone to do so without the API/example code.
+
+- - - -
+
+
+[File Format Template](TEMPLATE.md)
