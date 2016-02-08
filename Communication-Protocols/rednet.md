@@ -5,7 +5,7 @@ protocol | Rednet
 transmission method | Modem (Peripheral)
 full name | Rednet
 short name | RN
-protocol ID | ˋrednetˋ
+protocol ID | ̔rednet̔
 
 Rednet is a standard protocol included in computercraft. It is intented to be used as transmission method for other protocols.
 
@@ -15,20 +15,20 @@ A Rednet Message consists of the following informations:
 
 type | name | description
 ---- | ---- | -----------
-number | ˋnRecipientˋ | the target: either a computer ID or ˋ65535ˋ for broadcast
-number | ˋnAnswerChannelˋ | the ID of the computer which created the message
-table | ˋtMessageˋ | table mentioned below
+number | ̔nRecipient̔ | the target: either a computer ID or ̔65535̔ for broadcast
+number | ̔nAnswerChannel̔ | the ID of the computer which created the message
+table | ̔tMessage̔ | table mentioned below
 
-ˋtMessageˋ table:
+̔tMessage̔ table:
 
 type | name | describtion
 ---- | -----| -----------
-number | ˋnMessageIDˋ | a random number from 1 to 2147483647
-number | ˋnRecipientˋ | the target computer ID or 65535 for broadcast
-any data | ˋmessageˋ | the data to be transmitted, specified by the protocol
-string | ˋsProtocolˋ | protocol ID of the used protocol
+number | ̔nMessageIDˋ | a random number from 1 to 2147483647
+number | ̔nRecipientˋ | the target computer ID or 65535 for broadcast
+any data | ̔message̔ | the data to be transmitted, specified by the protocol
+string | ̔sProtocol̔ | protocol ID of the used protocol
 
-ˋsProtocolˋ can also be nil but it is **highly recommended to always send a valid Protocol ID in** ˋsProtocolˋ
+̔sProtocol̔ can also be nil but it is **highly recommended to always send a valid Protocol ID in** ̔sProtocol̔
 
 ## Transmission ##
 
@@ -44,25 +44,25 @@ Two modem packages get sent:
 
 field | value
 ----- | -----
-ˋchannelˋ | ˋnRecipientˋ
-ˋreplyChannelˋ | ˋnReplyChannelˋ
-ˋmessageˋ | ˋtMessageˋ
+̔channel̔ | ̔nRecipient̔
+̔replyChannel̔ | ̔nReplyChannel̔
+̔messag̔e | ̔tMessage̔
 
 field | value
 ----- | -----
-ˋchannelˋ | ˋ65533ˋ
-ˋreplyChannelˋ | ˋnReplyChannelˋ
-ˋmessageˋ | ˋtMessageˋ
+̔channel̔ | ̔65533̔
+̔replyChannel̔ | ̔nReplyChannel̔
+̔message̔ | ̔tMessage̔
 
 #### Repeating ####
 
-A repeater listens to channel ˋ65533ˋ and waits for incoming rednet messages. Everytime it recieves one it looks if it already had transmitted a packet with the same ˋnMessageIDˋ, if it hasn´t it sends two packets using the same pattern as for a sending task.
+A repeater listens to channel ̔65533̔ and waits for incoming rednet messages. Everytime it recieves one it looks if it already had transmitted a packet with the same ̔nMessageID̔, if it hasn´t it sends two packets using the same pattern as for a sending task.
 
-**Attention:** ˋnReplyChannelˋ *has to be the same as in the incoming message!*
+**Attention:** ̔nReplyChannel̔ *has to be the same as in the incoming message!*
 
 #### Recieving ####
 
-A recieving computer listens to the channel whichs number is equal to its Computer ID and on channel ˋ65535ˋ . When it recieves one, it checks if it recieved a message with the same ˋnMessageIDˋ, if it hasn´t it handles the packet as an ingoing message.
+A recieving computer listens to the channel whichs number is equal to its Computer ID and on channel ̔65535̔ . When it recieves one, it checks if it recieved a message with the same ̔nMessageID̔, if it hasn´t it handles the packet as an ingoing message.
 
 ## APIs ##
 
