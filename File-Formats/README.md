@@ -2,6 +2,15 @@
 
 File formats are specific ways to store data that can be read and written using standardised methods.
 
+MIME-Type | Name | Description | Recommendations
+--------- | ---- | ----------- | ---------------
+[application/directory](application/directory.md) | Folder | - | grouping files
+[image/nft](image/nft.md) | Nitrogen Fingers Text | - | Images that require both text and colour in each pixel (advanced computers)
+[image/paint](image/paint.md) | Paintutils Image | - | -
+[image/ucg](image/ucg.md) | Universal Compressed Graphics | - | Images that only require 1 colour per pixel
+[text/lua](text/lua.md) | Lua File | - | -
+[text/plain](text/plain.md) | Plain Text | - | -
+
 ## Proposal Requirements
 
 Every format must specify all of the following:
@@ -26,7 +35,7 @@ MIMEs should follow the standards given by the [IANA](http://www.iana.org/assign
 
 It is acceptable to create your category (bit before the slash). For example, Silica has over 9 different file formats, all of which start with `silica/`.
 
-[Template](template.md)
+[Template](TEMPLATE.md)
 
 ### Code to Read and Write
 
