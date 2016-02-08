@@ -63,6 +63,6 @@ A repeater listens to channel `65533` and waits for incoming rednet messages. Ev
 
 A recieving computer listens to the channel whichs number is equal to its Computer ID and on channel `65535` . When it recieves one, it checks if it recieved a message with the same `nMessageID`, if it hasn´t it handles the packet as an ingoing message.
 
-## APIs ##
+## Implementations ##
 
-* [Rednet API](http://www.computercraft.info/wiki/Rednet_(API)) (included in CraftOS)
+* [Rednet API](http://www.computercraft.info/wiki/Rednet_(API)) (included in CraftOS) (API)
