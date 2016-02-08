@@ -1,11 +1,11 @@
 # Rednet #
 
-protocol | Rednet
+Protocol | Rednet
 -------- | ------
-transmission method | Modem (Peripheral)
-full name | Rednet
-short name | RN
-protocol ID | `rednet`
+Transmission Method | Modem (Peripheral)
+Full Name | Rednet
+Short Name | RN
+Protocol ID | `rednet`
 
 Rednet is a standard protocol included in computercraft. It is intented to be used as transmission method for other protocols.
 
@@ -13,20 +13,20 @@ Rednet is a standard protocol included in computercraft. It is intented to be us
 
 A Rednet Message consists of the following informations:
 
-type | name | description
+Type | Name | Description
 ---- | ---- | -----------
-number | `nRecipient` | the target: either a computer ID or `65535` for broadcast
-number | `nAnswerChannel` | the ID of the computer which created the message
-table | `tMessage` | table mentioned below
+`number` | `nRecipient` | The target: either a computer ID or `65535` for broadcast
+`number` | `nAnswerChannel` | The ID of the computer which created the message
+`table` | `tMessage` | Table mentioned below
 
 `tMessage` table:
 
-type | name | describtion
+Type | Name | Describtion
 ---- | -----| -----------
-number | `nMessageID` | a random number from `1` to `2147483647`
-number | `nRecipient` | the target computer ID or `65535` for broadcast
-any data | `message` | the data to be transmitted, specified by the protocol
-string | `sProtocol` | protocol ID of the used protocol
+`number` | `nMessageID` | A random number from `1` to `2147483647`
+`number` | `nRecipient` | The target computer ID or `65535` for broadcast
+`any data` | `message` | The data to be transmitted, specified by the protocol
+`string` | `sProtocol` | Protocol ID of the used protocol
 `sProtocol` can also be `nil` but it is **highly recommended to always send a valid Protocol ID in** `sProtocol`
 
 ## Transmission ##
@@ -41,13 +41,13 @@ The message doesn´t leave the computer and gets handled as an ingoing message.
 
 Two modem packages get sent:
 
-field | value
+Field | Value
 ----- | -----
 `channel` | `nRecipient`
 `replyChannel` | `nReplyChannel`
 `message` | `tMessage`
 
-field | value
+Field | Value
 ----- | -----
 `channel` | `65533`
 `replyChannel` | `nReplyChannel`
