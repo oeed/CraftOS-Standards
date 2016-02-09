@@ -33,7 +33,7 @@ Key1:{Hello="World",World="Hello"}
 ```
 ##API to Convert config format to table and vice versa:
 http://pastebin.com/FrVe9hF3
-##Code for making a config from a table:
+##Code for making a table from a config:
 ```
 if type("config") ~= "string" then
   return nil,"Config must be a string"
@@ -56,11 +56,23 @@ for i,v in pairs(lines) do
 end
 return result
 ```
-##Code for making a table from a config:
+##Code for making a config from a table:
 ```
-local res = ""
-for i,v in pairs(t) do
-  res = res..i..":"..v.."\n"
+local s = ""
+local tk, tv
+for k, v in pairs(configTable) do
+  tk, tv = type(k), type(v)
+  if tk == "string" or tk == "number" then
+    if tv ~= "string" and tv ~= "nubmer" and tv ~= "boolean" and tv ~= "table" then
+      error("Invalid type for value: Expected string, number, boolean, table; got "..tv)
+    end
+    if tv == "table" then
+      tv = tostring(textutils.serialize(tv)):gsub("\n", "")
+    end
+    s = s .. tk .. ": " ..tostring(tv) .. "\n"
+  else
+    error("Invalid type for key: Expected string, number; got "..tk)
+  end
 end
-return res:sub(1,#res-1)
+return s
 ```
