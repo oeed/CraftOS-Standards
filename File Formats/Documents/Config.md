@@ -34,7 +34,7 @@ Key1:{Hello="World",World="Hello"}
 ##API to Convert config format to table and vice versa:
 http://pastebin.com/1GGq3fyw
 ##Code for making a table from a config:
-```
+```lua
 if type("config") ~= "string" then
   return nil,"Config must be a string"
 end
@@ -57,7 +57,7 @@ end
 return result
 ```
 ##Code for making a config from a table:
-```
+```lua
 local s = ""
 local tk, tv
 for k, v in pairs(configTable) do
