@@ -32,7 +32,7 @@ Correct way:
 Key1:{Hello="World",World="Hello"}
 ```
 ##API to Convert config format to table and vice versa:
-http://pastebin.com/FrVe9hF3
+http://pastebin.com/1GGq3fyw
 ##Code for making a table from a config:
 ```
 if type("config") ~= "string" then
