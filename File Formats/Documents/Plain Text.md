@@ -1,4 +1,4 @@
-# *COS 1:* Plain Test
+# *COS 1:* Plain Text
 
 ## Quick information
 
