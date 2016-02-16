@@ -37,8 +37,8 @@ end
 ```Lua
 -- This is a startup file. Append this code to the top of your startup file (or close to it) to adhere to the standard.
 
-fs.delete("/.tmp")
-fs.makeDir("/.tmp")
+fs.delete("/tmp")
+fs.makeDir("/tmp")
 
 -- Additionally, it is permissible to hide the folder from the user. The tmp directory might not need to be seen on every OS depending on your target userbase. PLEASE ENSURE YOU ARE ONLY HIDING "/tmp" AND NOT OTHER FOLDERS CALLED "tmp" IF YOU ARE LOOKING TO ONLY FOLLOW THIS STANDARD. This standard doesn't cover program-specific temp folders.
 ```
