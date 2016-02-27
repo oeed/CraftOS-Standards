@@ -1,4 +1,4 @@
-# _Temporary Directory_
+# *COS 7:* Temporary Directory
 | Information	|																						                                            |
 |-------------|---------------------------------------------------------------------------------------|
 | Type		  	| Path / Directory									
