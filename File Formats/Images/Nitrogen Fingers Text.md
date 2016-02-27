@@ -1,4 +1,4 @@
-# Nitrogen Fingers Text
+# *COS 6:* Nitrogen Fingers Text
 
 ## Quick information
 
