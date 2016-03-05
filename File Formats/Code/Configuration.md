@@ -17,10 +17,4 @@ Configuration files' contents depend on the application. It could be a table or 
 
 ## Extensions
 
-Valid extensions are:
-.cfg
-.config
-.properties
-.prop
-.cf
-.ini
+Valid extensions are: `.cfg`, `.config`, `.properties`, `.prop`, `.cf` and `.ini`
