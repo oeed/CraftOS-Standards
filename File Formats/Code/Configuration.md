@@ -12,8 +12,7 @@
 
 *This format is based upon [plain text](/File%20Formats/Documents/Plain%20Text.md) and as such technical details that apply to plain text also apply to this format.*
 
-Configuration files' contents depend on the application. It could be a table or like a [.properties](https://en.wikipedia.org/wiki/.properties) file so there is no real content standards for a configuration file.
-
+A configuration file contains either a table or a [.properties](https://en.wikipedia.org/wiki/.properties#Format) type value system. It's contents are written by the application, but usually not meant to be edited manually.
 
 ## Extensions
 
