@@ -16,4 +16,4 @@ A configuration file contains either a table, [.properties](https://en.wikipedia
 
 ## Extensions
 
-Valid extensions are: `.cfg`, `.config`, `.properties`, `.prop`, `.cf` and `.ini`
+Valid extensions are: `.cfg`, `.config`, `.properties`, `.prop`, `.cf`, `.ini` and `.inf`
