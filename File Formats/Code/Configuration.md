@@ -12,7 +12,7 @@
 
 *This format is based upon [plain text](/File%20Formats/Documents/Plain%20Text.md) and as such technical details that apply to plain text also apply to this format.*
 
-A configuration file contains either a table or a [.properties](https://en.wikipedia.org/wiki/.properties#Format) type value system. It's contents are written by the application, but usually not meant to be edited manually.
+A configuration file contains either a table, [.properties](https://en.wikipedia.org/wiki/.properties#Format) or an [.ini](https://en.wikipedia.org/wiki/INI_file#Format) type value system. It's contents are written by the application, but usually not meant to be edited manually.
 
 ## Extensions
 
