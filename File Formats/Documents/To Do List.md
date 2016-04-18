@@ -1,19 +1,19 @@
 # _To Do List_
 | Information	|																						                                            |
 |-------------|---------------------------------------------------------------------------------------|
-| Version     | 0.1.0                                                                                 |
+| Version     | 0.2.0                                                                                 |
 | Type		  	| Document file format														                                      |
 | MIME		  	| `basic/tdl`																			                                      |
 | Extensions	| `.tdl`	                                                                              |
 
 ### Technical Details
-This format is an attempt to create one united standard for to-do lists.
 
 A TDL file has some requirements:
 * It must be a serialized table.
-* Each item in that table must be a table containing a string and a boolean.
+* Each item in that table must be a table containing a string (to be used as the name of the task) and a number between 0 and 1 (the percent of completion, divided by 100).
 
-Regarding the last bullet, the string is the name of the task, and the boolean is whether it is finished or not.
+Even though the standard states that the number must be between 0 and 1, programs should add a case for if the table is malformed.
+
 #### Available Utilities
 * TDLClient - For manipulating TDL files.
 * TDLViewer - For viewing the contents of a TDL file.
@@ -24,9 +24,8 @@ Use `pastebin run Hpum9P5F` and choose "y" when prompted. This will install TDLC
 
 #### Usage
 ```Lua
--- example of TDL file
 {
-  {"Show off how minimalistic this looks.",true,},
-  {"Find out the Doctor's name.",false,}
+  {"Show off how minimalistic this looks.",1,},
+  {"Find out the Doctor's name.",0,}
 }
 ```
