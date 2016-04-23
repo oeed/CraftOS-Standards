@@ -2,6 +2,15 @@
 
 File formats are specific ways to store data that can be read and written using standardised methods.
 
+MIME Type | Name | Use Cases
+--------- | ---- | ---------
+[application/directory](application/directory.md) | Folder | Grouping files
+[image/nft](image/nft.md) | Nitrogen Fingers Text | Images that require both text and colour in each pixel (advanced computers)
+[image/paint](image/paint.md) | Paintutils Image | -
+[image/ucg](image/ucg.md) | Universal Compressed Graphics | Images that only require 1 colour per pixel
+[text/lua](text/lua.md) | Lua File | -
+[text/plain](text/plain.md) | Plain Text | -
+
 ## Proposal Requirements
 
 Every format must specify all of the following:
@@ -29,3 +38,8 @@ It is acceptable to create your category (bit before the slash). For example, Si
 ### Code to Read and Write
 
 You must create either an API, or if, the code is not very long, example code, to read and write your file format so others do not have to. However, your description of the format should be thorough enough for someone to do so without the API/example code.
+
+- - - -
+
+
+[File Format Template](TEMPLATE.md)
