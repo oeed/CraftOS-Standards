@@ -3,7 +3,7 @@
 placeholder | *Protocol Name*
 ------------|----------------
 Protocol Type | *P2P/Client-Server*
-String Identifier | *the identifier inside a inline code formating element*
+Identifier String | *the identifier inside a inline code formating element*
 
 *some basic information like intended use*
 
