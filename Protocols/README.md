@@ -8,10 +8,6 @@ x | x | x
 
 NOTE: *fill table with first protocols and then delete this notice*
 
-## Contributing
+- - - -
 
-If you want to to contribute a protocol create a pull request which:
-
-* adds a file named with the string identifier and ending with .md, following the [Template](TEMPLATE.md)
-* adds the protocol to the list above and links to the file
-* and of course meets the general conditions
+[Template](TEMPLATE.md)
