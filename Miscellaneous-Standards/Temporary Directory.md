@@ -1,19 +1,21 @@
 # *COS 7:* Temporary Directory
-| Information	|																						                                            |
-|-------------|---------------------------------------------------------------------------------------|
-| Type		  	| Path / Directory									
-| Location	| Temporary Directory is located in `/tmp`	|
+
+## Quick information
+| Information |                                                                 |
+| ----------- | --------------------------------------------------------------- |
+| Type        | Path / Directory                                                |
+| Location    | Temporary Directory is located in `/tmp`                        |
 
 ### Technical Details
 A standard temp directory exists at `/tmp`
 
 This directory is used for storing files temporarily. The point of this directory is to be able to have a standard place to store "junk" files, where the program doesn't have to worry about accidentally overriding another file created by the user. It is NOT a place to store any files that need to be accurately recalled later on.
 
-**Proper Usage in Supporting Programs**
+#### Proper Usage in Supporting Programs
 
 To use it properly, a program can (through normal non-interrupted execution) store files in the `/tmp` directory while it is running, and then should promptly delete the file from this directory as soon as possible.
 
-**Proper Support in Supporting OSes (and other systems)**
+#### Proper Support in Supporting OSes (and other systems)
 
 The `/tmp` folder should be deleted then recreated at the startup of the system. Access to this directory should be open and unprotected. It can however be hidden by the operating system, however, this is at the discretion of the OS creator (and hopefully a user-modifiable config setting as well). **Ensure that you are only hiding /tmp and not other folders called tmp**
 

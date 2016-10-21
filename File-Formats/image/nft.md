@@ -5,7 +5,7 @@
 | Information |                           |
 | ----------- | ------------------------- |
 | Type        | Image file format         |
-| MIME        | `image/nft`             |
+| MIME        | `image/nft`               |
 | Extensions  | `.nft`                    |
 
 ## Technical details
@@ -16,7 +16,7 @@ Unlike the paintutils format, however, this format allows characters and text co
 
 ### Special characters
 
-The format uses two special characters, a character whose byte is `30` and another whose byte is `31`. 
+The format uses two special characters, a character whose byte is `30` and another whose byte is `31`.
 
 
 | Byte | Represents |
