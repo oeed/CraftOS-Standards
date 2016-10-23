@@ -138,7 +138,7 @@ to ignore colours if it incapible of rendering them.
 be `sizeY` table entries, each being `sizeX` characters long.
 
 ## Available Utilities
- - [nsh and its related utilities](https://github.com/lyqyd/cc-netshell/) does things
-   differently.
+ - [nsh and its related utilities](https://github.com/lyqyd/cc-netshell/) uses
+   TRoR and various extensions to allow interacting with a computer remotely.
 
 [cospaint]: /File-Formats/image/paint.md "COS 4: Paintutils Image"
