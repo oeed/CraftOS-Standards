@@ -86,7 +86,7 @@ The client should send an appropriate response packet to these requests:
 | Code | Packet contents | Description                                         |
 | ---- | --------------- | --------------------------------------------------- |
 | `TI` | `<w>,<h>,<col>` | Send the client terminal's width, height and color support to the server. This packet MAY be sent at any time and SHOULD be sent whenever a `TQ` packet is received. |
-| `TG` | `<x>,<y>`       | Send the client terminal's cursor position. This MUST be sent when receiving a `TG` packet and SHOULD NOT be sent at any other time. |
+| `TP` | `<x>,<y>`       | Send the client terminal's cursor position. This MUST be sent when receiving a `TG` packet and SHOULD NOT be sent at any other time. |
 
 ### Client events
 The client MAY send events such as key presses to the client. However the client
