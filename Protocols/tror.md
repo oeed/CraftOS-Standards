@@ -30,6 +30,9 @@ These components are combined in the format:
 <Packet code>:<Metadata>;<Packet contents>
 ```
 
+The packet MUST take this exact format even if one component is empty. Both 
+`:` and `;` MUST be present.
+
 ### Connection management
 The server MAY send packets to the client to handle the connection, such as
 determining what extensions to the protocol the client supports.
