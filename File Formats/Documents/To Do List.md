@@ -1,9 +1,9 @@
-# _To Do List_
+# _Basic To Do List_
 | Information	|																						                                            |
 |-------------|---------------------------------------------------------------------------------------|
 | Version     | 0.2.0                                                                                 |
 | Type		  	| Document file format														                                      |
-| MIME		  	| `basic/tdl`																			                                      |
+| MIME		  	| `text/tdl`																			                                      |
 | Extensions	| `.tdl`	                                                                              |
 
 ### Technical Details
