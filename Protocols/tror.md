@@ -92,7 +92,7 @@ The client should send an appropriate response packet to these requests:
 | `TP` | `<x>,<y>`       | Carries the client terminal's cursor position. This MUST be sent when receiving a `TG` packet and SHOULD NOT be sent at any other time. |
 
 ### Client events
-The client MAY send events such as key presses to the client. However the client
+The client MAY send events such as key presses to the client. However the server
 MAY ignore these.
 
 | Code | Payload             | Description                                     |
