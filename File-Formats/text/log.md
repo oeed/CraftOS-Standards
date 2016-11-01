@@ -20,9 +20,12 @@ As of version 1.0.0.0 no Utilities come with this standard.
 
 ##Examples
 *Installation*
-A Universal Parser and Creator of the log files defined here can be found at https://github.com/MrObsidy/CC-LogParserAPI .
+
+A Universal Parser and Creator of the log files defined here can be found at https://github.com/MrObsidy/CC-LogParserAPI
 (It is obtainable in-game via lyqyd's packman as mrobsidy/logparser)
 
 *Usage*
+
 A example file, 'log1.log', would be this:
+
 '[23:21][INFO]: Booted TestOS'
