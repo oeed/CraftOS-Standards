@@ -15,10 +15,14 @@ the written data and the time when the data was written. As of Version 1.0.0.0 t
 '[ERROR]' - For the indication that a critical problem although it didn't crash the program existed
 '[CRITICAL]' - For the indication that a critical problem that crashed the program existed
 
-##Examples
-#Installation
---TODO--
+*Avaiable Utilities*
+As of version 1.0.0.0 no Utilities come with this standard.
 
-#Usage
+##Examples
+*Installation*
+A Universal Parser and Creator of the log files defined here can be found at https://github.com/MrObsidy/CC-LogParserAPI .
+(It is obtainable in-game via lyqyd's packman as mrobsidy/logparser)
+
+*Usage*
 A example file, 'log1.log', would be this:
 '[23:21][INFO]: Booted TestOS'
