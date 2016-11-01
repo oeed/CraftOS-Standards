@@ -3,8 +3,8 @@
 |Information |                |
 |------------|----------------|
 |Type        |Log File        |
-|MIME        |'text/log'      |
-|Extensions  |'.log'          |
+|MIME        |`text/log`      |
+|Extensions  |`.log`          |
 
 ##Technical Details
 .log files should contain valid logged data, including the type of the written data,
@@ -28,4 +28,4 @@ A Universal Parser and Creator of the log files defined here can be found at htt
 
 A example file, 'log1.log', would be this:
 
-'[23:21][INFO]: Booted TestOS'
+`[23:21][INFO]: Booted TestOS'`
