@@ -62,7 +62,7 @@ A example file, 'log1.log', would be this:
 [23:27][INFO]: User(testuser) entered wrong password
 [23:28][INFO]: User(testuser) logged in Succesfully
 [23:29][SEVERE]: Desktop could not be generated, falling back to text mode
-[23:30][CRITICAL]: Fallback failed! TestOS has crashed, this is the crash report: (also saved to cras-report.txt)
+[23:30][CRITICAL]: Fallback failed! TestOS has crashed, this is the crash report: (also saved to crash-report.txt)
 [23:30][CRITICAL]: failed to call displayTerminal() in kernel.lua, syntax error on line 274
 [23:30][CRITICAL]: desktopFail() in display.lib tried calling _G[ kernel.lua ].displayTerminal()
 ```
