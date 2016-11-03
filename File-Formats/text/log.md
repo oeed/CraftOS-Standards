@@ -32,7 +32,8 @@ A Universal Parser and Creator of the log files defined here can be found at htt
 The Timestamp has to be obtained using this (or a similar) way:
 `textutils.formatTime(os.time(), true)`
 ``` lua
---Please note that the time is given in 24-Hour-Clock. This should stay that way to avoid confusion and make reading the log by external programs a lot easier.
+Please note that the time is given in 24-Hour-Clock. This should stay that way to avoid 
+confusion and make reading the log by external programs a lot easier.
 ```
 
 
