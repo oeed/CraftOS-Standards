@@ -56,7 +56,8 @@ A `[INFO]` tag in a log should be used for everything that is not a error, Wrong
 
 A example file, 'log1.log', would be this:
 
-`[23:21][INFO]: Booted TestOS
+```
+[23:21][INFO]: Booted TestOS
 
 [23:23][ERROR]: No rednet modem found
 
@@ -71,4 +72,4 @@ A example file, 'log1.log', would be this:
 [23:30][CRITICAL]: failed to call displayTerminal() in kernel.lua, syntax error on line 274
 
 [23:30][CRITICAL]: desktopFail() in display.lib tried calling _G[ kernel.lua ].displayTerminal()
-`
+```
