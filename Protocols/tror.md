@@ -68,7 +68,7 @@ terminal has taken.
 | `TV` | `[<f,b,t>:]`    | Sets the entire terminal's contents. Each line is separated by the `:` character and composed of the foreground, background colors and text. All fields across all lines MUST be the same length. |
 
 \* All colors use the codes defined in [COS 4][cospaint]. The client MAY choose
-to ignore colours if it is incapable of rendering them.
+to ignore colors if it is incapable of rendering them.
 
 † All fields being the same length allows the packet parser to read `n`
 characters once the first `,` has been found. The implementation SHOULD discard
@@ -135,7 +135,7 @@ The table MUST contain the following fields:
 | `backColor`   | A table representing the textual contents of the terminal.\*†|
 
 \* All colors use the codes defined in [COS 4][cospaint]. The client MAY choose
-to ignore colours if it is incapable of rendering them.
+to ignore colors if it is incapable of rendering them.
 
 † Each entry of the table represents a separate line of the terminal. There must
 be `sizeY` table entries, each being `sizeX` characters long.
