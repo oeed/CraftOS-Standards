@@ -39,7 +39,7 @@ determining what extensions to the protocol the client supports.
 
 | Code | Payload         | Description                                         |
 | ---- | --------------- | --------------------------------------------------- |
-| `SP` | None            | Requests the supported extensions from the client.  |
+| `SP` | `<extensions>`  | Carries the extensions supported by the server and requests a capability list from the client. Each extension should be surrounded in hyphens. This packet MAY be sent at any time. |
 | `SC` | `<message>`     | Closes this connection. The server SHOULD NOT send any more packets after this one, nor handle any incoming packets. |
 
 Some packets require the client to respond.
