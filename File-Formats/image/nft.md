@@ -4,6 +4,7 @@
 
 | Information |                           |
 | ----------- | ------------------------- |
+| Version     | 1.0.0                     |
 | Type        | Image file format         |
 | MIME        | `image/nft`               |
 | Extensions  | `.nft`                    |

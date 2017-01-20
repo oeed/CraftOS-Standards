@@ -3,7 +3,9 @@
 ## Quick information
 | Information |                                                                 |
 | ----------- | --------------------------------------------------------------- |
+| Version     | 1.0.0                                                           |
 | Type        | Path / Directory                                                |
+| MIME        | `application/directory`                                         |
 | Location    | Temporary Directory is located in `/tmp`                        |
 
 ### Technical Details

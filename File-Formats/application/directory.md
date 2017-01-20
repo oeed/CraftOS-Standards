@@ -4,6 +4,7 @@
 
 | Information |                           |
 | ----------- | ------------------------- |
+| Version     | 1.0.0                     |
 | Type        | Folder/directory          |
 | MIME        | `application/directory`   |
 | Extensions  | *See 'Extensions'*        |

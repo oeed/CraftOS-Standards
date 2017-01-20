@@ -9,8 +9,6 @@
 | ----------- | -------------------------------------------------------------------------------------- |
 | Version     | [semver](http://semver.org) version tag                                                |
 | Type        | Category                                                                               |
-| MIME        | `mime/type`                                                                            |
-| Extensions  | `.extension1`; `.extension2` (Use `none` if your standard does not use file extensions)|
 | Deprecates  | (List) Names of standards deprecated by _Standard Name_                                |
 
 ### Technical Details

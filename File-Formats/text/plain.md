@@ -4,6 +4,7 @@
 
 | Information |                           |
 | ----------- | ------------------------- |
+| Version     | 1.0.0                     |
 | Type        | Plain text file format    |
 | MIME        | `text/plain`              |
 | Extensions  | `.txt` or `.text`         |

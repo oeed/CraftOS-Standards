@@ -4,6 +4,7 @@
 
 | Information |                           |
 | ----------- | ------------------------- |
+| Version     | 1.0.0                     |
 | Type        | Image file format         |
 | MIME        | `image/paint`             |
 | Extensions  | `.nfp`                    |
@@ -16,7 +17,7 @@ The file contains a row of one character long values as pixel information. Each 
 0f0f0f0f
 0000000f
 00000000
-  9abc    
+  9abc  
 12345678
 ```
 
