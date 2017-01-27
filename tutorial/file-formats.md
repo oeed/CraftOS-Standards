@@ -2,16 +2,6 @@
 
 File formats are specific ways to store data that can be read and written using standardised methods.
 
-MIME Type | Name | Use Cases
---------- | ---- | ---------
-[application/directory](application/directory.md) | Folder | Grouping files
-[application/directory](application/temporary directory.md) | Temporary Folder | Storing temporary files
-[image/nft](image/nft.md) | Nitrogen Fingers Text | Images that require both text and colour in each pixel (advanced computers)
-[image/paint](image/paint.md) | Paintutils Image | -
-[image/ucg](image/ucg.md) | Universal Compressed Graphics | Images that only require 1 colour per pixel
-[text/lua](text/lua.md) | Lua File | -
-[text/plain](text/plain.md) | Plain Text | -
-
 ## Proposal Requirements
 
 Every format must specify all of the following:
@@ -43,4 +33,4 @@ You must create either an API, or if, the code is not very long, example code, t
 - - - -
 
 
-[File Format Template](TEMPLATE.md)
+[File Format Template](file-format-template.md)
