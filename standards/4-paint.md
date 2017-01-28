@@ -11,7 +11,8 @@
 
 ## Technical details
 
-The file contains a row of one character long values as pixel information. Each pixel of one row is put directly behind another in the corresponding line one of these values.
+The file contains a row of one character long values as pixel information. Each pixel of one row is put directly behind
+another in the corresponding line one of these values.
 
 ```
 0f0f0f0f
@@ -21,8 +22,8 @@ The file contains a row of one character long values as pixel information. Each 
 12345678
 ```
 
-This is an example of an image file being opened with a text editor. Each value maches one pixel. The values always have to be one of the 16 color codes (0-9, a-f).
-Having a space as a pixel information makes that pixel transparent.
+This is an example of an image file being opened with a text editor. Each value maches one pixel. The values always have
+to be one of the 16 color codes (0-9, a-f).  Having a space as a pixel information makes that pixel transparent.
 
 ## Color codes
 
