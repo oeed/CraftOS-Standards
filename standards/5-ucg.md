@@ -114,7 +114,7 @@ The diagram below may explain this better:
 
 Here's an example function that would read a `LengthValue`:
 
-```Lua
+```lua
 function readLengthValue(inputstream)
 	local firstNumber = inputstream.readNumber(4)
 		-- the argument of the readNumber function specifies how many bits to read

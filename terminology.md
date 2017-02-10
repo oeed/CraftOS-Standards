@@ -94,7 +94,7 @@ executables are user-facing applications.
 #### 3.2. Library
 
 A library is a file containing Lua (or otherwise) that can be loaded by CraftOS (or otherwise) and used for code
-reusal. Do not the difference between an API and a library.
+reusal. Do note the difference between an API and a library.
 
 
 #### 3.3. Resource

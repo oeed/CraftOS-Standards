@@ -5,11 +5,11 @@ long read, so enjoy it with some :coffee:. If you'd like to create new standards
 all that you'll need to know. Thanks for helping us out by standardizing something awesome!
 
 ### A Note on Licensing
-All standards published here on CraftOS-Standards are licensed under
-the [GNU Free Documentation License](../LICENSE.md). **This includes all code examples**. For the sake of open source
-software and simplicity alike, libraries for dealing with your standard should also be licensed
-under [similar FOSS licenses](http://choosealicense.com/). After all, licensing official utilities for an open source
-standard under a closed source license wouldn't make much sense.
+All standards published here on CraftOS-Standards are [licensed](/LICENSE.md) under
+the [GNU Free Documentation License](https://www.gnu.org/licenses/fdl-1.3.en.html). **This includes all code
+examples**. For the sake of open source software and simplicity alike, libraries for dealing with your standard should
+also be licensed under [similar FOSS licenses](http://choosealicense.com/). After all, licensing official utilities for
+an open source standard under a closed source license wouldn't make much sense.
 
 ## Getting Started: Becoming a CraftOS-Standards Contributor
 

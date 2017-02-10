@@ -30,6 +30,6 @@ List of all utilities that come with the standard, with links to their source co
 Description of how can one obtain _Standard Name_ (GitHub repository, Pastebin link, etc) examples and utilities.
 
 #### Usage
-```Lua
+```lua
 -- Example usage of the format goes in here
 ```

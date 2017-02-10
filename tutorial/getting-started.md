@@ -78,7 +78,7 @@ them to the point, one per every scenario your standard should be used in. More 
 One thing to note about example code is that it should be easily readable. Every important line should be commented
 (i.e. explain what you're doing!) and the code should be well formatted. Preferably, use camel case for all
 variables. If your code outputs something to the screen, add a comment with the exact same text. In Markdown, use proper
-highlighting for the source code (i.e. \`\`\`Lua ... \`\`\`).
+highlighting for the source code (i.e. ```` ```lua ... ``` ````).
 
 ### Step 5: Utilities
 > **Note**: While highly recommended, this step is in fact optional. Simple standards, standards that don't involve code
@@ -107,11 +107,8 @@ here. Always discuss your ideas and what you are working on at the moment with t
 at [our Gitter chat](https://Gitter.im/oeed/CraftOS-Standards).
 
 #### A Note on Licensing
-All standards published here on CraftOS-Standards are licensed under
-the [GNU Free Documentation License](../LICENSE.md). **This includes all code examples**. For the sake of open source
-software and simplicity alike, your libraries should also be licensed
-under [similar FOSS licenses](http://choosealicense.com/). After all, licensing official utilities for an open source
-standard under a closed source license wouldn't make much sense.
-
-### Step 6: Almost There
-Haha, we lied! You are nowhere near the finish.
+All standards published here on CraftOS-Standards are [licensed](/LICENSE.md) under
+the [GNU Free Documentation License](https://www.gnu.org/licenses/fdl-1.3.en.html). **This includes all code
+examples**. For the sake of open source software and simplicity alike, your libraries should also be licensed
+under [similar FOSS licenses](https://www.gnu.org/licenses/fdl-1.3.en.html). After all, licensing official utilities for
+an open source standard under a closed source license wouldn't make much sense.
