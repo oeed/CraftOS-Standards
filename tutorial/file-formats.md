@@ -16,7 +16,8 @@ commonly used ones.
 ### MIME
 Example: `text/lua`, `image/sketch`, `silica/theme`
 
-Every file format must be given excatly one MIME. If more than one already exists pick **one**.
+Every file format must be given exactly one MIME type. If more than one MIME type is applicable then choose the one that
+best suits it.
 
 A MIME should tell a program exactly what format the file is, so it must be unique for each format. Having multiple
 MIMEs for one file format creates situations where some programs will assume they do not support the format, even if
