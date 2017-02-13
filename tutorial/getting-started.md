@@ -45,11 +45,11 @@ are still yes.)
 ### Step 3: Documentation
 Already sure how should the final result look like? Certain that it will be useful? Ready to get to the _real_ work?
 Great! You can start writing the docs for your upcoming standard. Just don't create a Pull Request ("PR") yet, as at
-this point your proposal probably doesn't match the [required template](./StandardProposalGuidelines.md). We will tell
+this point your proposal probably doesn't match the [required template](./standard-template.md). We will tell
 you when to start publishing your work on GitHub soon enough, so stay tuned!
 
 While writing the documentation, you want to explain the format to people who will be using it in the future. You
-obviously have to **follow [the guidelines](./StandardProposalGuidelines.md)**, but here are a few things to keep in
+obviously have to **follow [the guidelines](./standard-template.md)**, but here are a few things to keep in
 mind:
 
 * **Don't write a tutorial**

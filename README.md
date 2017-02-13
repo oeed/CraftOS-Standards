@@ -21,36 +21,36 @@ proposed.
 
 If you have a standard you would like to propose follow these steps:
 
-1. **Make sure there isn't an existing standard** – the whole point of this repo is to ensure we don't have
+1. **Make sure there isn't an existing standard:** The whole point of this repo is to ensure we don't have
    two [slightly different standards](https://xkcd.com/927/); there should only be one. You can either check
    the [PR page](https://github.com/oeed/CraftOS-Standards/pulls?q=is%3Apr) or directly browse
    the [source tree](https://github.com/oeed/CraftOS-Standards/tree/master/) of this repository. You should also look at
    the Submission Checklist (further down this page).
-2. **Develop your standard** – think about the different use cases and try to create clearly defined standards and rules
+2. **Develop your standard:** Think about the different use cases and try to create clearly defined standards and rules
    for your standard. If applicable, it's probably a good idea to create an API or example code for your standard.
-3. **Write an RFC** – once you have created your standard create a Markdown document which clearly explains what your
-   standard is, how it works and how to use it. If you're at all unsure of what to do, look at the RFCs of accepted
+3. **Write an RFC:** An RFC, or Request for Comments, is a Markdown document which clearly explains what your standard
+   is, how it works and how to use it. If you're at all unsure of what to do, look at the RFCs of accepted
    standards. Make sure that the document covers your standard extensively, and contains thorough examples. You want
    your standard to be the most popular one and to be used by as many people as possible, so this step should take the
    longest amount of time (not counting #7 Discussion).
-4. (Optional) **Create a GitHub repository for in-depth docs and example source code** – Markdown is great, but
+4. (Optional) **Create a public repository for in-depth docs and example source code** – Markdown is great, but
    sometimes you just need to express your thoughts in Lua. This step should be taken if the standard needs thorough
    documentation (such as a [wiki](https://help.github.com/articles/about-github-wikis/)) and/or example code that is
    either too long to be included in the Markdown document or split into too many files and follows a specific directory
    structure. Add the link to your newly created repository to the Markdown document from step 3.
-5. **Create a pull request** – create a pull request with your completed Markdown file. If you think it belongs in a
+5. **Create a pull request:** Create a pull request with your completed Markdown file. If you think it belongs in a
    folder put it in there/create it, but we can easily move it if you're unsure. Any code examples should be embedded in
    the Markdown file. Your pull request's description should be a explanation of the format and why it's needed, but not
    too descriptive, that's what the Markdown file is for. Remember that the pull request isn't permanent, it is there to
    agree upon the standard, the Markdown file is permanent and should have all the detail. However, any full APIs should
    be uploaded to Pastebin and a link should be added to the Markdown file. *There should be no code files in the repo,
    markdown only.*
-6. **Post a link on the forums** – not everyone pays attention to GitHub. To allow more people to see your RFC create a
+6. **Post a link on the forums:** Not everyone pays attention to GitHub. To allow more people to see your RFC create a
    topic in general directing them to the pull request. The post should simply give a very brief description of what
    your standard is (i.e. *an method redirecting a terminal over Rednet*). The post's title should also make it pretty
    obvious it's an RFC (i.e. *RFC: TRoR (Terminal Redirection over Rednet)*). To keep everything centralised it's best
    to keep discussion of the RFC on the pull request, *NOT* the forums post.
-7. **Discussion** – if anyone has any issues or improvements with your standard discuss them on the pull request and
+7. **Discussion:** If anyone has any issues or improvements with your standard discuss them on the pull request and
    change the RFC's markdown file until people have agreed upon the standard. At this point the pull request will be
    merged, you standard has been accepted!
 

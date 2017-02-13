@@ -1,8 +1,8 @@
 # Guidelines for Contributing to CraftOS-Standards
 
-Welcome, fellow developer! First off, make yourself familiar with the [tutorial](./Tutorial/GettingStarted.md). It's a
+Welcome, fellow developer! First off, make yourself familiar with the [tutorial](./tutorial/getting-started.md). It's a
 long read, so enjoy it with some :coffee:. If you'd like to create new standards, the tutorial should actually give you
-all that you'll need to know. Thanks for helping us out by standardizing something awesome!
+all you will need to know. Thanks for helping us out by standardizing something awesome!
 
 ### A Note on Licensing
 All standards published here on CraftOS-Standards are [licensed](/LICENSE.md) under
@@ -11,29 +11,27 @@ examples**. For the sake of open source software and simplicity alike, libraries
 also be licensed under [similar FOSS licenses](http://choosealicense.com/). After all, licensing official utilities for
 an open source standard under a closed source license wouldn't make much sense.
 
-## Getting Started: Becoming a CraftOS-Standards Contributor
+## Getting Started: Becoming a CraftOS-Standards Collaborator
 
-If, for some reason, you'd like to join our
-amazing [contributor team](https://github.com/oeed/CraftOS-Standards/graphs/contributors), you will need to know a few
-more things about how this repository works. Great news! We wrote them down here so that you won't have to bother us
-about the details.
+If, for some reason, you'd like to join our amazing team of collaborators, you will need to know a few more things about
+how this repository works. Great news! We wrote them down here so you won't have to bother us about the details.
 
 ### Repository Organization
 
-[Contributors](https://github.com/oeed/CraftOS-Standards/graphs/contributors) take care of everything, and are also the
-mods of our [Gitter chat](https://gitter.im/oeed/CraftOS-Standards). As a contributor, you will
+Collaborators take care of everything, and are also the mods of
+our [Gitter chat](https://gitter.im/oeed/CraftOS-Standards). As a collaborator, you will
 assign [labels](https://github.com/oeed/CraftOS-Standards/labels)
 to [Issues](https://github.com/oeed/CraftOS-Standards/issues?q=is%3Aopen), help users who are proposing a standard with
 their [Markdown](https://guides.github.com/features/mastering-markdown/) documentation (as in, help them make it
-follow [the template](./Tutorial/StandardProposalGuidelines.md)) and watch out for
+follow [the template](./tutorial/standard-template.md)) and watch out for
 new [pull requests](https://github.com/oeed/CraftOS-Standards/pulls) that pop up every day. When
 on [Gitter](https://gitter.im), you will be in charge of keeping the conversation on-topic. You will also provide help
 to users asking for it.
 
-If you really want to become a contributor, here is a checklist of what you need to do before asking @oeed to add you
+If you really want to become a collaborator, here is a checklist of what you need to do before asking @oeed to add you
 to [the team](https://github.com/oeed/CraftOS-Standards/graphs/contributors) as a collaborator:
  - [ ] Make sure you are a [Markdown master](https://guides.github.com/features/mastering-markdown/)
- - [ ] You really have to know the [guide](./Tutorial/GettingStarted.md) by heart. Read the [README](./README.md) as
+ - [ ] You really have to know the [guide](./tutorial/getting-started.md) by heart. Read the [README](./README.md) as
    well
  - [ ] Watch this repository
  - [ ] Look at some of
