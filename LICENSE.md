@@ -3,7 +3,7 @@
 GNU Free Documentation License
 ==============================
 
-_Version 1.3, 3 November 2008_  
+_Version 1.3, 3 November 2008_
 _Copyright © 2000, 2001, 2002, 2007, 2008 Free Software Foundation, Inc. &lt;<http://fsf.org/>&gt;_
 
 Everyone is permitted to copy and distribute verbatim copies
@@ -402,19 +402,19 @@ public wiki that anybody can edit is an example of such a server.  A
 “Massive Multiauthor Collaboration” (or “MMC”) contained in the site
 means any set of copyrightable works thus published on the MMC site.
 
-“CC-BY-SA” means the Creative Commons Attribution-Share Alike 3.0 
-license published by Creative Commons Corporation, a not-for-profit 
-corporation with a principal place of business in San Francisco, 
-California, as well as future copyleft versions of that license 
+“CC-BY-SA” means the Creative Commons Attribution-Share Alike 3.0
+license published by Creative Commons Corporation, a not-for-profit
+corporation with a principal place of business in San Francisco,
+California, as well as future copyleft versions of that license
 published by that same organization.
 
-“Incorporate” means to publish or republish a Document, in whole or in 
+“Incorporate” means to publish or republish a Document, in whole or in
 part, as part of another Document.
 
-An MMC is “eligible for relicensing” if it is licensed under this 
-License, and if all works that were first published under this License 
-somewhere other than this MMC, and subsequently incorporated in whole or 
-in part into the MMC, **(1)** had no cover texts or invariant sections, and 
+An MMC is “eligible for relicensing” if it is licensed under this
+License, and if all works that were first published under this License
+somewhere other than this MMC, and subsequently incorporated in whole or
+in part into the MMC, **(1)** had no cover texts or invariant sections, and
 **(2)** were thus incorporated prior to November 1, 2008.
 
 The operator of an MMC Site may republish an MMC contained in the site
@@ -428,19 +428,19 @@ To use this License in a document you have written, include a copy of
 the License in the document and put the following copyright and
 license notices just after the title page:
 
-    Copyright (c)  <YEAR>  <YOUR NAME>.
-    Permission is granted to copy, distribute and/or modify this document
-    under the terms of the GNU Free Documentation License, Version 1.3
-    or any later version published by the Free Software Foundation;
-    with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
-    A copy of the license is included in the section entitled “GNU
-    Free Documentation License”.
+	Copyright (c)  <YEAR>  <YOUR NAME>.
+	Permission is granted to copy, distribute and/or modify this document
+	under the terms of the GNU Free Documentation License, Version 1.3
+	or any later version published by the Free Software Foundation;
+	with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
+	A copy of the license is included in the section entitled “GNU
+	Free Documentation License”.
 
 If you have Invariant Sections, Front-Cover Texts and Back-Cover Texts,
 replace the `with...Texts.` line with this:
 
-    with the Invariant Sections being <LIST THEIR TITLES>, with the
-    Front-Cover Texts being <LIST>, and with the Back-Cover Texts being <LIST>.
+	with the Invariant Sections being <LIST THEIR TITLES>, with the
+	Front-Cover Texts being <LIST>, and with the Back-Cover Texts being <LIST>.
 
 If you have Invariant Sections without Cover Texts, or some other
 combination of the three, merge those two alternatives to suit the
