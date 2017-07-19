@@ -63,7 +63,7 @@ terminal has taken.
 | `TB` | `<blink>`         | Sets the cursor blink where `true` is blinking and `false` is not blinking. |
 | `TF` | `<color>`         | Sets the foreground color.\*                                                |
 | `TK` | `<color>`         | Sets the background color.\*                                                |
-| `TM` | `<c>:<r>:<g>:<b>` | Sets the palette for colour `c` to use the given RGB values. `r`, `g` and `b` MUST be numbers between 0 and 1. |
+| `TM` | `<c>,<r>,<g>,<b>` | Sets the palette for colour `c` to use the given RGB values. `r`, `g` and `b` MUST be numbers between 0 and 1. |
 | `TR` | `<w>,<h>`         | Sets the size of the client terminal in width and height. The client MAY chose to discard data which does not fit on the screen. |
 | `TY` | `<f,b,t>`         | Sets the foreground, background and text of the current line. All three fields MUST be the same length.\*†                       |
 | `TV` | `[<f,b,t>:]`      | Sets the entire terminal's contents. Each line is separated by the `:` character and composed of the foreground, background colors and text. All fields across all lines MUST be the same length. |
@@ -92,7 +92,7 @@ The client should send an appropriate response packet to these requests:
 | ---- | ----------------- | --------------------------------------------------- |
 | `TI` | `<w>,<h>,<col>`   | Carries the client terminal's width, height and color support to the server. This packet MAY be sent at any time and SHOULD be sent whenever a `TQ` packet is received. |
 | `TP` | `<x>,<y>`         | Carries the client terminal's cursor position. This MUST be sent when receiving a `TG` packet and SHOULD NOT be sent at any other time. |
-| `TO` | `<c>:<r>:<g>:<b>` | Carries the client terminal's pallete for a given colour. This MUST be sent when receiving a `TN` packet and SHOULD NOT be sent at any other time. |
+| `TO` | `<c>,<r>,<g>,<b>` | Carries the client terminal's pallete for a given colour. This MUST be sent when receiving a `TN` packet and SHOULD NOT be sent at any other time. |
 
 ### Client events
 The client MAY send events such as key presses to the client. However the server
@@ -152,4 +152,4 @@ entries, each being composed of a number between 0 and 1.
  - [nsh and its related utilities](https://github.com/lyqyd/cc-netshell/) uses
    TRoR and various extensions to allow interacting with a computer remotely.
 
-[cospaint]: /File-Formats/image/paint.md#color-codes "COS 4: Paintutils Image"
+[cospaint]: 4-paint.md#color-codes "COS 4: Paintutils Image"
