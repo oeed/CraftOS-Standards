@@ -136,6 +136,11 @@ The table MUST contain the following fields:
 | `text`        | A table representing the textual contents of the terminal.†  |
 | `textColor`   | A table representing the background color of the terminal.\*†|
 | `backColor`   | A table representing the textual contents of the terminal.\*†|
+
+The table SHOULD contain the following fields. If they are ommitted then the
+client SHOULD revert to the default values.
+| ------------- | ------------------------------------------------------------ |
+| Field         | Description                                                  |
 | `palette`     | A table representing the palette of the terminal.‡           |
 
 \* All colors use the codes defined in [COS 4][cospaint]. The client MAY choose
