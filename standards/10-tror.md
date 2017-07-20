@@ -139,8 +139,9 @@ The table MUST contain the following fields:
 
 The table SHOULD contain the following fields. If they are ommitted then the
 client SHOULD revert to the default values.
-| ------------- | ------------------------------------------------------------ |
+
 | Field         | Description                                                  |
+| ------------- | ------------------------------------------------------------ |
 | `palette`     | A table representing the palette of the terminal.‡           |
 
 \* All colors use the codes defined in [COS 4][cospaint]. The client MAY choose
@@ -149,9 +150,9 @@ to ignore colors if it is incapable of rendering them.
 † Each entry of the table represents a separate line of the terminal. There MUST
 be `sizeY` table entries, each being `sizeX` characters long.
 
-‡ This should be a list of values, using the colour codes defined in
-[COS 4][cospaint]. Each value MUST be a table with `r`, `g` and `b` table
-entries, each being composed of a number between 0 and 1.
+‡ This MUST be a lookup of colour codes (defined in [COS 4][cospaint]) to an RGB
+color. Each color MUST be a table with `r`, `g` and `b` table entries, each
+being composed of a number between 0 and 1.
 
 ## Available Utilities
  - [nsh and its related utilities](https://github.com/lyqyd/cc-netshell/) uses
