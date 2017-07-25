@@ -47,12 +47,8 @@ end
 ```lua
 -- This is a startup file. Append this code to the top of your startup file (or close to it) to adhere to the standard.
 
--- check if tempdir setting exists; If it doesn't, set it
-if settings.get("tempdir") == nil then
-    settings.set("tempdir", "/tmp")
-end
-
-local tempdir = settings.get("tempdir")
+-- Get tempdir, or fall back to "/tmp"
+local tempdir = settings.get("/tmp")
 fs.delete(tempdir)
 fs.makeDir(tempdir)
 
