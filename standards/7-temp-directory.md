@@ -48,7 +48,7 @@ end
 -- This is a startup file. Append this code to the top of your startup file (or close to it) to adhere to the standard.
 
 -- Get tempdir, or fall back to "/tmp"
-local tempdir = settings.get("/tmp")
+local tempdir = settings.get("tempdir", "/tmp")
 fs.delete(tempdir)
 fs.makeDir(tempdir)
 
