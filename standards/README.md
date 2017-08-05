@@ -11,3 +11,4 @@ This document contains a list of all standards.
 | 6   | [Nitrogen Fingers Text](6-nft.md)               | File format      | Images with text support                                     |
 | 7   | [Temporary directory](7-temp-directory.md)      | File format      | Storing temporary files                                      |
 | 10  | [TRoR](10-tror.md)                              | Protocol         | Redirecting terminal state and interactions over Rednet.     |
+| 11  | [Clipboard](11-clipboard.md)                    | Protocol         | Share Informations with other Programs                       |
